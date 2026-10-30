@@ -1,0 +1,623 @@
+{
+  "fonte": "Padaria - Listas de produtos extraídas de imagens",
+  "data_atualizacao": "2024-06-30",
+  "total_produtos": 87,
+  "resumo_categorias": {
+    "Biscoitos": 6,
+    "Bolos": 30,
+    "Confeitaria": 7,
+    "Pães": 27,
+    "Tortas": 17
+  },
+  "produtos": [
+    {
+      "codigo_sistema": 83411,
+      "descricao": "TORTA TATICO ABACAXI COM NINHO",
+      "unidade": "UND",
+      "codigo_balanca": 260084,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83432,
+      "descricao": "TORTA TATICO BRIGADEIRO COM NINHO",
+      "unidade": "UND",
+      "codigo_balanca": 260091,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83434,
+      "descricao": "TORTA TATICO BRIGADEIRO",
+      "unidade": "UND",
+      "codigo_balanca": 23658,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83435,
+      "descricao": "TORTA TATICO CHOCOLATE",
+      "unidade": "UND",
+      "codigo_balanca": 23573,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83433,
+      "descricao": "TORTA TATICO DOCE DE LEITE",
+      "unidade": "UND",
+      "codigo_balanca": 23580,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 84512,
+      "descricao": "TORTA TATICO ABACAXI FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 23894,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 84511,
+      "descricao": "TORTA TATICO BANANA FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 14328,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 84515,
+      "descricao": "TORTA TATICO BRIGADEIRO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 35408,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 84513,
+      "descricao": "TORTA TATICO FLORESTA NEGRA FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 35392,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 84517,
+      "descricao": "TORTA TATICO LEITE NINHO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 44790,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 84516,
+      "descricao": "TORTA TATICO PRESTÍGIO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 35415,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83436,
+      "descricao": "TORTA TATICO FLORESTA NEGRA",
+      "unidade": "UND",
+      "codigo_balanca": 12584,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83437,
+      "descricao": "TORTA TATICO LEITE NINHO",
+      "unidade": "UND",
+      "codigo_balanca": 38607,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83438,
+      "descricao": "TORTA TATICO MORANGO COM NINHO",
+      "unidade": "UND",
+      "codigo_balanca": 54898,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83439,
+      "descricao": "TORTA TATICO MORANGO",
+      "unidade": "UND",
+      "codigo_balanca": 25627,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83427,
+      "descricao": "TORTA TATICO NEGRESCO",
+      "unidade": "UND",
+      "codigo_balanca": 260077,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 83440,
+      "descricao": "TORTA TATICO PRESTÍGIO",
+      "unidade": "UND",
+      "codigo_balanca": 23603,
+      "categoria": "Tortas"
+    },
+    {
+      "codigo_sistema": 202022,
+      "descricao": "PÃO FRANCÊS",
+      "unidade": "KG",
+      "codigo_balanca": 202022,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 52566,
+      "descricao": "PÃO DE QUEIJO MINI",
+      "unidade": "KG",
+      "codigo_balanca": 52566,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 3100,
+      "descricao": "PÃO DE QUEIJO TRADICIONAL TÁTICO",
+      "unidade": "KG",
+      "codigo_balanca": 3100,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322645,
+      "descricao": "PÃO DE AÇÚCAR TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322645,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322690,
+      "descricao": "PÃO AMIGO TÁTICO",
+      "unidade": "200G",
+      "codigo_balanca": 322690,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322676,
+      "descricao": "PÃO DE BATATA TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322676,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 83096,
+      "descricao": "PÃO BISNAGUINHA TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 83096,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322720,
+      "descricao": "PÃO BRIOCHINHO TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322720,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322669,
+      "descricao": "PÃO DE COCO TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322669,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322621,
+      "descricao": "PÃO FAZENDA TÁTICO",
+      "unidade": "250G",
+      "codigo_balanca": 322621,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 49061,
+      "descricao": "PÃO DE FORMA TÁTICO",
+      "unidade": "350G",
+      "codigo_balanca": 49061,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 69507400,
+      "descricao": "PÃO MANTEIGA TÁTICO",
+      "unidade": "KG",
+      "codigo_balanca": 69507400,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 2981,
+      "descricao": "PÃO RECHEADO AMERICANO TÁTICO",
+      "unidade": "KG",
+      "codigo_balanca": 2981,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322737,
+      "descricao": "PÃO DE HAMBÚRGUER COM GERGELIM TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322737,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 73110,
+      "descricao": "PÃO DE HAMBÚRGUER TRADICIONAL TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 73110,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 73134,
+      "descricao": "PÃO HOT DOG TRADICIONAL TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 73134,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 261074,
+      "descricao": "PÃO DE LEITE TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 261074,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322638,
+      "descricao": "PÃO DE MILHO TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322638,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322652,
+      "descricao": "PÃO MINI MANDI TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 322652,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 83171,
+      "descricao": "PÃO MINUTO TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 83171,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 100526,
+      "descricao": "PÃO SEMI ITALIANO TÁTICO",
+      "unidade": "KG",
+      "codigo_balanca": 100526,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 73127,
+      "descricao": "PÃO SOVADO TÁTICO",
+      "unidade": "300G",
+      "codigo_balanca": 73127,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322685,
+      "descricao": "PÃO VITAMINADO TÁTICO",
+      "unidade": "200G",
+      "codigo_balanca": 322685,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 55659,
+      "descricao": "PAVÊ TÁTICO BOMBOM",
+      "unidade": "KG",
+      "codigo_balanca": 55659,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 49344,
+      "descricao": "PAVÊ TÁTICO CHOCOLATE",
+      "unidade": "KG",
+      "codigo_balanca": 49344,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 44820,
+      "descricao": "PAVÊ TÁTICO MORANGO",
+      "unidade": "KG",
+      "codigo_balanca": 44820,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 322713,
+      "descricao": "PETA TÁTICO POLVILHO AZEDO",
+      "unidade": "150G",
+      "codigo_balanca": 322713,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 322706,
+      "descricao": "PETÃO TÁTICO DOCE",
+      "unidade": "250G",
+      "codigo_balanca": 322706,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 34548,
+      "descricao": "PETÃO TÁTICO DOCE",
+      "unidade": "KG",
+      "codigo_balanca": 34548,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 34531,
+      "descricao": "PETÃO TÁTICO POLVILHO AZEDO",
+      "unidade": "KG",
+      "codigo_balanca": 34531,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 326865,
+      "descricao": "PIZZA TÁTICO BROTINHO CALABRESA",
+      "unidade": "KG",
+      "codigo_balanca": 326865,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 263153,
+      "descricao": "PIZZA TÁTICO BROTINHO MARGUERITA",
+      "unidade": "KG",
+      "codigo_balanca": 263153,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 83813,
+      "descricao": "BEIJINHO TATICO",
+      "unidade": "KG",
+      "codigo_balanca": 2233,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 83821,
+      "descricao": "BEM CASADO TATICO PÃO DE MEL",
+      "unidade": "KG",
+      "codigo_balanca": 63258,
+      "categoria": "Confeitaria"
+    },
+    {
+      "codigo_sistema": 83877,
+      "descricao": "BISCOITO PALITO DE QUEIJO TATICO",
+      "unidade": "KG",
+      "codigo_balanca": 8945,
+      "categoria": "Biscoitos"
+    },
+    {
+      "codigo_sistema": 83924,
+      "descricao": "BISCOITO DE QUEIJO TATICO",
+      "unidade": "KG",
+      "codigo_balanca": 2301,
+      "categoria": "Biscoitos"
+    },
+    {
+      "codigo_sistema": 84151,
+      "descricao": "BISCOITO SEQUILHOS DE COCO TATICO",
+      "unidade": "KG",
+      "codigo_balanca": 3452,
+      "categoria": "Biscoitos"
+    },
+    {
+      "codigo_sistema": 84347,
+      "descricao": "BISCOITO CHIPA TRADICIONAL TATICO",
+      "unidade": "KG",
+      "codigo_balanca": 146425,
+      "categoria": "Biscoitos"
+    },
+    {
+      "codigo_sistema": 84320,
+      "descricao": "BISCOITO DE QUEIJO SUÍÇO TRADICIONAL TATICO",
+      "unidade": "KG",
+      "codigo_balanca": 2604,
+      "categoria": "Biscoitos"
+    },
+    {
+      "codigo_sistema": 84204,
+      "descricao": "BISCOITO TATICO QUEIJO SUÍÇO MINI",
+      "unidade": "KG",
+      "codigo_balanca": 233763,
+      "categoria": "Biscoitos"
+    },
+    {
+      "codigo_sistema": 84531,
+      "descricao": "BOLO TATICO GELADO BRIGADEIRO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 18326,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84533,
+      "descricao": "BOLO TATICO GELADO CHOCOLATE FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 18227,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84528,
+      "descricao": "BOLO TATICO GELADO COCO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 2394,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84537,
+      "descricao": "BOLO TATICO GELADO LEITE CONDENSADO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 18289,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84530,
+      "descricao": "BOLO TATICO GELADO LEITE NINHO FATIA",
+      "unidade": "KG",
+      "codigo_balanca": 260053,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87138,
+      "descricao": "BOLO TATICO BAUNILHA",
+      "unidade": "400G",
+      "codigo_balanca": 261500,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87136,
+      "descricao": "BOLO TATICO AIPIM",
+      "unidade": "400G",
+      "codigo_balanca": 261517,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84129,
+      "descricao": "BOLO TATICO BROWNIE PRESTÍGIO",
+      "unidade": "KG",
+      "codigo_balanca": 100465,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89139,
+      "descricao": "BOLO TATICO CAÇAROLA",
+      "unidade": "400G",
+      "codigo_balanca": 263115,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87139,
+      "descricao": "BOLO TATICO CENOURA",
+      "unidade": "400G",
+      "codigo_balanca": 261452,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87123,
+      "descricao": "BOLO TATICO CHOCOLATE",
+      "unidade": "400G",
+      "codigo_balanca": 322751,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87121,
+      "descricao": "BOLO TATICO COCO",
+      "unidade": "400G",
+      "codigo_balanca": 322768,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89112,
+      "descricao": "BOLO TATICO CREMOSO AMENDOIM",
+      "unidade": "400G",
+      "codigo_balanca": 263085,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89141,
+      "descricao": "BOLO TATICO CREMOSO ABACAXI COM COCO",
+      "unidade": "400G",
+      "codigo_balanca": 263139,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89113,
+      "descricao": "BOLO TATICO CREMOSO CAPPUCCINO",
+      "unidade": "400G",
+      "codigo_balanca": 263092,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89140,
+      "descricao": "BOLO TATICO CREMOSO BANANA E GRANOLA",
+      "unidade": "400G",
+      "codigo_balanca": 263122,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84133,
+      "descricao": "BOLO TATICO CREMOSO CENOURA",
+      "unidade": "KG",
+      "codigo_balanca": 63227,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89111,
+      "descricao": "BOLO TATICO FORMIGUEIRO",
+      "unidade": "400G",
+      "codigo_balanca": 263061,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87135,
+      "descricao": "BOLO TATICO FUBÁ",
+      "unidade": "400G",
+      "codigo_balanca": 261494,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84164,
+      "descricao": "BOLO TATICO ABACAXI COM COCO",
+      "unidade": "KG",
+      "codigo_balanca": 68765,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84171,
+      "descricao": "BOLO TATICO BANANA E GRANOLA",
+      "unidade": "KG",
+      "codigo_balanca": 259996,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84166,
+      "descricao": "BOLO TATICO ESPECIARIA",
+      "unidade": "KG",
+      "codigo_balanca": 68833,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84163,
+      "descricao": "BOLO TATICO LEITE CONDENSADO",
+      "unidade": "KG",
+      "codigo_balanca": 7894,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84170,
+      "descricao": "BOLO TATICO MILHO CREMOSO",
+      "unidade": "KG",
+      "codigo_balanca": 258203,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84179,
+      "descricao": "BOLO TATICO MOUSSE DE CHOCOLATE",
+      "unidade": "KG",
+      "codigo_balanca": 258180,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84162,
+      "descricao": "BOLO TATICO NEGA MALUCA",
+      "unidade": "KG",
+      "codigo_balanca": 63203,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84168,
+      "descricao": "BOLO TATICO PÃO DE MEL",
+      "unidade": "KG",
+      "codigo_balanca": 258197,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87132,
+      "descricao": "BOLO TATICO LARANJA",
+      "unidade": "400G",
+      "codigo_balanca": 261487,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 87131,
+      "descricao": "BOLO TATICO LEITE CONDENSADO",
+      "unidade": "400G",
+      "codigo_balanca": 261524,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 89137,
+      "descricao": "BOLO TATICO LIMÃO",
+      "unidade": "400G",
+      "codigo_balanca": 263108,
+      "categoria": "Bolos"
+    }
+  ]
+}
