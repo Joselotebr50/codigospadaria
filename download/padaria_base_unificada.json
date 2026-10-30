@@ -1,14 +1,14 @@
 {
   "fonte": "Padaria - Listas de produtos extraídas de imagens",
   "data_atualizacao": "2024-06-30",
-  "total_produtos": 182,
+  "total_produtos": 180,
   "resumo_categorias": {
     "Biscoitos": 13,
     "Bolos": 32,
     "Confeitaria": 54,
     "Pizzas": 7,
     "Produtos Amanhecidos": 7,
-    "Pães": 52,
+    "Pães": 50,
     "Tortas": 17
   },
   "produtos": [
@@ -909,13 +909,6 @@
       "categoria": "Pães"
     },
     {
-      "codigo_sistema": 87166,
-      "descricao": "PÃO BISNAGUITO TATICO",
-      "unidade": "300G",
-      "codigo_balanca": 83225,
-      "categoria": "Pães"
-    },
-    {
       "codigo_sistema": 84276,
       "descricao": "PÃO BRIOCHE FRUTAS",
       "unidade": "350G",
@@ -997,13 +990,6 @@
       "descricao": "PÃO DE FORMA TÁTICO",
       "unidade": "350G",
       "codigo_balanca": 49061,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 107073,
-      "descricao": "PÃO DE QUEIJO TRADICIONAL TATICO",
-      "unidade": "KG",
-      "codigo_balanca": 2652,
       "categoria": "Pães"
     },
     {
