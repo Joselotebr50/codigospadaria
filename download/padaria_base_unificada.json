@@ -1,14 +1,14 @@
 {
   "fonte": "Padaria - Listas de produtos extraídas de imagens",
   "data_atualizacao": "2024-06-30",
-  "total_produtos": 180,
+  "total_produtos": 181,
   "resumo_categorias": {
     "Biscoitos": 13,
     "Bolos": 32,
     "Confeitaria": 54,
     "Pizzas": 7,
     "Produtos Amanhecidos": 7,
-    "Pães": 50,
+    "Pães": 51,
     "Tortas": 17
   },
   "produtos": [
@@ -272,17 +272,17 @@
       "categoria": "Bolos"
     },
     {
-      "codigo_sistema": 84163,
-      "descricao": "BOLO TATICO LEITE CONDENSADO (KG)",
-      "unidade": "KG",
-      "codigo_balanca": 7894,
-      "categoria": "Bolos"
-    },
-    {
       "codigo_sistema": 87131,
       "descricao": "BOLO TATICO LEITE CONDENSADO (400G)",
       "unidade": "400G",
       "codigo_balanca": 261524,
+      "categoria": "Bolos"
+    },
+    {
+      "codigo_sistema": 84163,
+      "descricao": "BOLO TATICO LEITE CONDENSADO (KG)",
+      "unidade": "KG",
+      "codigo_balanca": 7894,
       "categoria": "Bolos"
     },
     {
@@ -832,6 +832,13 @@
       "categoria": "Pães"
     },
     {
+      "codigo_sistema": 34531,
+      "descricao": "PETÃO TÁTICO POLVILHO AZEDO",
+      "unidade": "KG",
+      "codigo_balanca": 34531,
+      "categoria": "Pães"
+    },
+    {
       "codigo_sistema": 322706,
       "descricao": "PETÓN TÁTICO DOCE (250G)",
       "unidade": "250G",
@@ -843,13 +850,6 @@
       "descricao": "PETÓN TÁTICO DOCE (KG)",
       "unidade": "KG",
       "codigo_balanca": 34548,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 34531,
-      "descricao": "PETÃO TÁTICO POLVILHO AZEDO",
-      "unidade": "KG",
-      "codigo_balanca": 34531,
       "categoria": "Pães"
     },
     {
@@ -906,6 +906,13 @@
       "descricao": "PÃO BISNAGUINHA TÁTICO",
       "unidade": "300G",
       "codigo_balanca": 83096,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 87166,
+      "descricao": "PÃO BISNAGUITO TATICO",
+      "unidade": "300G",
+      "codigo_balanca": 83225,
       "categoria": "Pães"
     },
     {
