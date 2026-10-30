@@ -1,14 +1,14 @@
 {
   "fonte": "Padaria - Listas de produtos extraídas de imagens",
   "data_atualizacao": "2024-06-30",
-  "total_produtos": 203,
+  "total_produtos": 182,
   "resumo_categorias": {
     "Biscoitos": 13,
     "Bolos": 32,
-    "Confeitaria": 56,
-    "Pães": 66,
-    "Pizzas": 12,
+    "Confeitaria": 54,
+    "Pizzas": 7,
     "Produtos Amanhecidos": 7,
+    "Pães": 52,
     "Tortas": 17
   },
   "produtos": [
@@ -363,24 +363,10 @@
       "categoria": "Confeitaria"
     },
     {
-      "codigo_sistema": 84285,
-      "descricao": "BROA DOCE TATICO",
-      "unidade": "KG",
-      "codigo_balanca": 147019,
-      "categoria": "Confeitaria"
-    },
-    {
       "codigo_sistema": 84327,
       "descricao": "BROA TEMPERADA TATICO",
       "unidade": "KG",
       "codigo_balanca": 147019,
-      "categoria": "Confeitaria"
-    },
-    {
-      "codigo_sistema": 106315,
-      "descricao": "BROA TEMPERADA TATICO",
-      "unidade": "KG",
-      "codigo_balanca": 2599,
       "categoria": "Confeitaria"
     },
     {
@@ -720,34 +706,6 @@
       "categoria": "Confeitaria"
     },
     {
-      "codigo_sistema": 102196,
-      "descricao": "MINI PÃO BAGUETE ERVAS FINAS",
-      "unidade": "KG",
-      "codigo_balanca": 1985,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 102194,
-      "descricao": "MINI PÃO BAGUETE PARMESÃO",
-      "unidade": "KG",
-      "codigo_balanca": 1984,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 89288,
-      "descricao": "PIZZA TATICO BROTINHO CALABRESA",
-      "unidade": "KG",
-      "codigo_balanca": 326865,
-      "categoria": "Pizzas"
-    },
-    {
-      "codigo_sistema": 89289,
-      "descricao": "PIZZA TATICO BROTINHO MARGUERITA",
-      "unidade": "KG",
-      "codigo_balanca": 263753,
-      "categoria": "Pizzas"
-    },
-    {
       "codigo_sistema": 89290,
       "descricao": "PIZZA TATICO BROTINHO MUSSARELA",
       "unidade": "KG",
@@ -755,21 +713,7 @@
       "categoria": "Pizzas"
     },
     {
-      "codigo_sistema": 89293,
-      "descricao": "PIZZA TATICO BROTINHO MUSSARELA",
-      "unidade": "KG",
-      "codigo_balanca": 263177,
-      "categoria": "Pizzas"
-    },
-    {
       "codigo_sistema": 92992,
-      "descricao": "PIZZA TATICO BROTINHO PRESUNTO",
-      "unidade": "KG",
-      "codigo_balanca": 263160,
-      "categoria": "Pizzas"
-    },
-    {
-      "codigo_sistema": 89292,
       "descricao": "PIZZA TATICO BROTINHO PRESUNTO",
       "unidade": "KG",
       "codigo_balanca": 263160,
@@ -808,13 +752,6 @@
       "descricao": "PIZZA TATICO MÉDIA PRESUNTO",
       "unidade": "KG",
       "codigo_balanca": 525,
-      "categoria": "Pizzas"
-    },
-    {
-      "codigo_sistema": 91553,
-      "descricao": "PIZZA TATICO MÉDIA PRESUNTO",
-      "unidade": "KG",
-      "codigo_balanca": 523,
       "categoria": "Pizzas"
     },
     {
@@ -871,6 +808,20 @@
       "descricao": "CROISSANT",
       "unidade": "KG",
       "codigo_balanca": 351,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 102196,
+      "descricao": "MINI PÃO BAGUETE ERVAS FINAS",
+      "unidade": "KG",
+      "codigo_balanca": 1985,
+      "categoria": "Pães"
+    },
+    {
+      "codigo_sistema": 102194,
+      "descricao": "MINI PÃO BAGUETE PARMESÃO",
+      "unidade": "KG",
+      "codigo_balanca": 1984,
       "categoria": "Pães"
     },
     {
@@ -1070,24 +1021,10 @@
       "categoria": "Pães"
     },
     {
-      "codigo_sistema": 87181,
-      "descricao": "PÃO DE LEITE TATICO",
-      "unidade": "300G",
-      "codigo_balanca": 26076,
-      "categoria": "Pães"
-    },
-    {
       "codigo_sistema": 261074,
       "descricao": "PÃO DE LEITE TÁTICO",
       "unidade": "300G",
       "codigo_balanca": 261074,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 87778,
-      "descricao": "PÃO DE MILHO TATICO",
-      "unidade": "300G",
-      "codigo_balanca": 323438,
       "categoria": "Pães"
     },
     {
@@ -1102,13 +1039,6 @@
       "descricao": "PÃO DE QUEIJO MINI",
       "unidade": "KG",
       "codigo_balanca": 52566,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 106316,
-      "descricao": "PÃO DE QUEIJO MINI",
-      "unidade": "KG",
-      "codigo_balanca": 2600,
       "categoria": "Pães"
     },
     {
@@ -1133,31 +1063,10 @@
       "categoria": "Pães"
     },
     {
-      "codigo_sistema": 84106,
-      "descricao": "PÃO FRANCÊS",
-      "unidade": "KG",
-      "codigo_balanca": 3186,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 107071,
-      "descricao": "PÃO FRANCÊS",
-      "unidade": "KG",
-      "codigo_balanca": 2650,
-      "categoria": "Pães"
-    },
-    {
       "codigo_sistema": 84090,
       "descricao": "PÃO FRANCÊS BAGUETE",
       "unidade": "KG",
       "codigo_balanca": 79402,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 106317,
-      "descricao": "PÃO FRANCÊS BAGUETE",
-      "unidade": "KG",
-      "codigo_balanca": 2601,
       "categoria": "Pães"
     },
     {
@@ -1172,13 +1081,6 @@
       "descricao": "PÃO FRANCÊS INTEGRAL",
       "unidade": "KG",
       "codigo_balanca": 100502,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 107070,
-      "descricao": "PÃO FRANCÊS INTEGRAL",
-      "unidade": "KG",
-      "codigo_balanca": 2649,
       "categoria": "Pães"
     },
     {
@@ -1210,20 +1112,6 @@
       "categoria": "Pães"
     },
     {
-      "codigo_sistema": 107072,
-      "descricao": "PÃO MANDI",
-      "unidade": "KG",
-      "codigo_balanca": 2651,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 86480,
-      "descricao": "PÃO MANTEIGA TATICO",
-      "unidade": "KG",
-      "codigo_balanca": 69587400,
-      "categoria": "Pães"
-    },
-    {
       "codigo_sistema": 69507400,
       "descricao": "PÃO MANTEIGA TÁTICO",
       "unidade": "KG",
@@ -1235,13 +1123,6 @@
       "descricao": "PÃO MINI FRANCÊS",
       "unidade": "KG",
       "codigo_balanca": 2648,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 87167,
-      "descricao": "PÃO MINI MANDI TATICO",
-      "unidade": "300G",
-      "codigo_balanca": 322252,
       "categoria": "Pães"
     },
     {
@@ -1259,24 +1140,10 @@
       "categoria": "Pães"
     },
     {
-      "codigo_sistema": 83171,
-      "descricao": "PÃO MINUTO TÁTICO",
-      "unidade": "300G",
-      "codigo_balanca": 83171,
-      "categoria": "Pães"
-    },
-    {
       "codigo_sistema": 2981,
       "descricao": "PÃO RECHEADO AMERICANO TÁTICO",
       "unidade": "KG",
       "codigo_balanca": 2981,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 84416,
-      "descricao": "PÃO SEMI ITALIANO TATICO",
-      "unidade": "KG",
-      "codigo_balanca": 100525,
       "categoria": "Pães"
     },
     {
@@ -1291,20 +1158,6 @@
       "descricao": "PÃO SOVADO TATICO",
       "unidade": "300G",
       "codigo_balanca": 73127,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 73127,
-      "descricao": "PÃO SOVADO TÁTICO",
-      "unidade": "300G",
-      "codigo_balanca": 73127,
-      "categoria": "Pães"
-    },
-    {
-      "codigo_sistema": 87191,
-      "descricao": "PÃO VITAMINADO TATICO",
-      "unidade": "200G",
-      "codigo_balanca": 322683,
       "categoria": "Pães"
     },
     {
