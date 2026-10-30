@@ -26,6 +26,7 @@ model Product {
   unidade         String
   codigoBalanca   Int
   categoria       String
+  archived        Boolean  @default(false)
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 }

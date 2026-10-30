@@ -2,24 +2,32 @@ import { NextRequest, NextResponse } from "next/server"
 import { db } from "@/lib/db"
 
 // Normalize text for accent-insensitive search
-// Removes diacritics so "pao" matches "PÃO", "qjo" matches "QUEIJO", etc.
 function normalize(text: string): string {
   return text
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "") // remove all combining diacritical marks
+    .replace(/[\u0300-\u036f]/g, "")
     .toUpperCase()
 }
 
-// GET /api/products - List all products with optional search and category filter
-// Search is accent-insensitive: "pao" → PÃO, "qjo" → QUEIJO, etc.
+// GET /api/products - List products with search, category, and archive filters
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
     const search = searchParams.get("search") || ""
     const categoria = searchParams.get("categoria") || ""
+    const archived = searchParams.get("archived") // "true", "false", or omitted
 
-    // Build Prisma where clause (category filter only)
+    // Build Prisma where clause
     const where: Record<string, unknown> = {}
+
+    // Archive filter: by default show non-archived; "true" shows archived only; "all" shows both
+    if (archived === "true") {
+      where.archived = true
+    } else if (archived === "false" || !archived) {
+      where.archived = false
+    }
+    // if archived === "all", don't filter
+
     if (categoria && categoria !== "Todos") {
       where.categoria = categoria
     }
@@ -30,10 +38,7 @@ export async function GET(request: NextRequest) {
     })
 
     // Apply accent-insensitive search filtering in JS
-    // Supports multiple words: "bolo choc" → matches BOLO ... CHOCOLATE
-    // Each word must appear somewhere in the product text (AND logic)
     if (search) {
-      // Split search into individual words (normalized, accent-free)
       const searchWords = search
         .trim()
         .split(/\s+/)
@@ -43,26 +48,25 @@ export async function GET(request: NextRequest) {
       const searchNum = parseInt(search) || -1
 
       products = products.filter((p) => {
-        // Match by exact codigo_sistema or codigo_balanca number
         if (p.codigoSistema === searchNum) return true
         if (p.codigoBalanca === searchNum) return true
-
-        // Match by partial codigo_sistema or codigo_balanca string
         if (String(p.codigoBalanca).includes(search.trim())) return true
         if (String(p.codigoSistema).includes(search.trim())) return true
-
-        // Match descricao: every search word must be found (accent-insensitive)
         const descNorm = normalize(p.descricao)
         return searchWords.every((word) => descNorm.includes(word))
       })
     }
 
-    // Get category counts
+    // Get category counts (non-archived only for main view)
     const categories = await db.product.groupBy({
       by: ["categoria"],
+      where: { archived: archived === "true" ? true : false },
       _count: { categoria: true },
       orderBy: { categoria: "asc" },
     })
+
+    // Get archived count
+    const archivedCount = await db.product.count({ where: { archived: true } })
 
     return NextResponse.json({
       products,
@@ -70,7 +74,8 @@ export async function GET(request: NextRequest) {
         name: c.categoria,
         count: c._count.categoria,
       })),
-      total: await db.product.count(),
+      total: await db.product.count({ where: { archived: false } }),
+      archivedCount,
     })
   } catch (error) {
     console.error("Error fetching products:", error)
@@ -81,7 +86,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
-// POST /api/products - Create a new product (requires auth)
+// POST /api/products - Create a new product
 export async function POST(request: NextRequest) {
   try {
     const authHeader = request.headers.get("authorization")

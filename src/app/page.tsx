@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Label } from '@/components/ui/label'
-import { Search, Plus, Pencil, LogOut, Package, X, Loader2 } from 'lucide-react'
+import { Search, Plus, Pencil, LogOut, Package, X, Loader2, Archive, ArchiveRestore, Trash2 } from 'lucide-react'
 import { toast } from 'sonner'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -27,6 +27,7 @@ interface Product {
   unidade: string
   codigoBalanca: number
   categoria: string
+  archived: boolean
   createdAt: string
   updatedAt: string
 }
@@ -83,8 +84,10 @@ export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([])
   const [categories, setCategories] = useState<CategoryInfo[]>([])
   const [totalCount, setTotalCount] = useState(0)
+  const [archivedCount, setArchivedCount] = useState(0)
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('Todos')
+  const [showArchived, setShowArchived] = useState(false)
   const [productsLoading, setProductsLoading] = useState(false)
 
   // Modal state
@@ -113,19 +116,21 @@ export default function HomePage() {
       const params = new URLSearchParams()
       if (searchQuery) params.set('search', searchQuery)
       if (selectedCategory !== 'Todos') params.set('categoria', selectedCategory)
+      params.set('archived', showArchived ? 'true' : 'false')
 
       const res = await fetch(`/api/products?${params.toString()}`)
       const data = await res.json()
       setProducts(data.products)
       setCategories(data.categories)
       setTotalCount(data.total)
+      setArchivedCount(data.archivedCount || 0)
     } catch (err) {
       console.error('Error fetching products:', err)
       toast.error('Erro ao carregar produtos')
     } finally {
       setProductsLoading(false)
     }
-  }, [user, searchQuery, selectedCategory])
+  }, [user, searchQuery, selectedCategory, showArchived])
 
   useEffect(() => {
     fetchProducts()
@@ -161,6 +166,47 @@ export default function HomePage() {
     }
   }
 
+  // Archive/Unarchive product
+  const handleToggleArchive = async (product: Product) => {
+    try {
+      const res = await fetch(`/api/products/${product.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${user?.id}`,
+        },
+        body: JSON.stringify({ archived: !product.archived }),
+      })
+      if (!res.ok) {
+        toast.error('Erro ao arquivar produto')
+        return
+      }
+      toast.success(product.archived ? 'Produto restaurado!' : 'Produto arquivado!')
+      fetchProducts()
+    } catch {
+      toast.error('Erro de conexão')
+    }
+  }
+
+  // Delete product permanently
+  const handleDelete = async (product: Product) => {
+    if (!confirm(`Excluir permanentemente "${product.descricao}"?`)) return
+    try {
+      const res = await fetch(`/api/products/${product.id}`, {
+        method: 'DELETE',
+        headers: { 'Authorization': `Bearer ${user?.id}` },
+      })
+      if (!res.ok) {
+        toast.error('Erro ao excluir produto')
+        return
+      }
+      toast.success('Produto excluído permanentemente!')
+      fetchProducts()
+    } catch {
+      toast.error('Erro de conexão')
+    }
+  }
+
   // Logout handler
   const handleLogout = () => {
     setUser(null)
@@ -168,8 +214,10 @@ export default function HomePage() {
     setProducts([])
     setCategories([])
     setTotalCount(0)
+    setArchivedCount(0)
     setSearchQuery('')
     setSelectedCategory('Todos')
+    setShowArchived(false)
     toast.info('Sessão encerrada')
   }
 
@@ -390,7 +438,27 @@ export default function HomePage() {
       <div className="sticky top-[108px] z-20 border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="flex gap-2 px-4 py-3 overflow-x-auto hide-scrollbar">
-            {allCategories.map((cat) => {
+            {/* Archived toggle */}
+            <button
+              onClick={() => { setShowArchived(!showArchived); setSelectedCategory('Todos') }}
+              className={`
+                flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium
+                transition-all duration-200 whitespace-nowrap
+                ${showArchived
+                  ? 'text-white shadow-md scale-105'
+                  : 'bg-white/60 text-foreground/70 hover:bg-white/90 hover:text-foreground shadow-sm'
+                }
+              `}
+              style={showArchived ? { backgroundColor: 'oklch(0.55 0.08 250)' } : undefined}
+            >
+              <span>{showArchived ? <ArchiveRestore className="h-3.5 w-3.5" /> : <Archive className="h-3.5 w-3.5" />}</span>
+              <span>{showArchived ? 'Arquivados' : 'Arquivados'}</span>
+              <span className={`text-xs ${showArchived ? 'text-white/80' : 'text-muted-foreground'}`}>
+                ({archivedCount})
+              </span>
+            </button>
+
+            {!showArchived && allCategories.map((cat) => {
               const isActive = selectedCategory === cat
               const emoji = cat === 'Todos' ? '📋' : (CATEGORY_EMOJI[cat] || '📦')
               const count = getCategoryCount(cat)
@@ -493,16 +561,53 @@ export default function HomePage() {
                             {product.codigoBalanca}
                           </span>
                         </div>
-                        {/* Edit button */}
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          onClick={() => handleEdit(product)}
-                          className="h-8 w-8 flex-shrink-0 hover:bg-amber-50 -mr-1"
-                          style={{ color: 'oklch(0.55 0.10 55)' }}
-                        >
-                          <Pencil className="h-3.5 w-3.5" />
-                        </Button>
+                        {/* Action buttons */}
+                        <div className="flex flex-col gap-1 flex-shrink-0">
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            onClick={() => handleEdit(product)}
+                            className="h-7 w-7 hover:bg-amber-50"
+                            style={{ color: 'oklch(0.55 0.10 55)' }}
+                          >
+                            <Pencil className="h-3 w-3" />
+                          </Button>
+                          {product.archived ? (
+                            <>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => handleToggleArchive(product)}
+                                className="h-7 w-7 hover:bg-green-50"
+                                style={{ color: 'oklch(0.55 0.15 145)' }}
+                                title="Restaurar"
+                              >
+                                <ArchiveRestore className="h-3 w-3" />
+                              </Button>
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => handleDelete(product)}
+                                className="h-7 w-7 hover:bg-red-50"
+                                style={{ color: 'oklch(0.55 0.20 25)' }}
+                                title="Excluir permanentemente"
+                              >
+                                <Trash2 className="h-3 w-3" />
+                              </Button>
+                            </>
+                          ) : (
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              onClick={() => handleToggleArchive(product)}
+                              className="h-7 w-7 hover:bg-slate-50"
+                              style={{ color: 'oklch(0.55 0.08 250)' }}
+                              title="Arquivar"
+                            >
+                              <Archive className="h-3 w-3" />
+                            </Button>
+                          )}
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -624,6 +729,23 @@ export default function HomePage() {
           </div>
 
           <DialogFooter className="gap-2 sm:gap-0">
+            {/* Archive button in edit modal */}
+            {editingProduct && (
+              <Button
+                variant="outline"
+                onClick={() => { handleToggleArchive(editingProduct); setModalOpen(false) }}
+                disabled={saving}
+                className="h-10 gap-1.5"
+                style={{ borderColor: 'oklch(0.70 0.08 250)', color: 'oklch(0.45 0.08 250)' }}
+              >
+                {editingProduct.archived ? (
+                  <><ArchiveRestore className="h-4 w-4" /> Restaurar</>
+                ) : (
+                  <><Archive className="h-4 w-4" /> Arquivar</>
+                )}
+              </Button>
+            )}
+            <div className="flex-1" />
             <Button
               variant="outline"
               onClick={() => setModalOpen(false)}

@@ -42,16 +42,17 @@ export async function PUT(
 
     const { id } = await params
     const body = await request.json()
-    const { descricao, codigoSistema, codigoBalanca, unidade, categoria } = body
+    const { descricao, codigoSistema, codigoBalanca, unidade, categoria, archived } = body
 
     const product = await db.product.update({
       where: { id },
       data: {
-        ...(descricao && { descricao }),
-        ...(codigoSistema && { codigoSistema: parseInt(String(codigoSistema)) }),
-        ...(codigoBalanca && { codigoBalanca: parseInt(String(codigoBalanca)) }),
-        ...(unidade && { unidade }),
-        ...(categoria && { categoria }),
+        ...(descricao !== undefined && { descricao }),
+        ...(codigoSistema !== undefined && { codigoSistema: parseInt(String(codigoSistema)) }),
+        ...(codigoBalanca !== undefined && { codigoBalanca: parseInt(String(codigoBalanca)) }),
+        ...(unidade !== undefined && { unidade }),
+        ...(categoria !== undefined && { categoria }),
+        ...(archived !== undefined && { archived: Boolean(archived) }),
       },
     })
 
