@@ -5,7 +5,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -21,7 +21,7 @@ model User {
 
 model Product {
   id              String   @id @default(cuid())
-  codigoSistema   Int
+  codigoSistema   Int      @unique
   descricao       String
   unidade         String
   codigoBalanca   Int
