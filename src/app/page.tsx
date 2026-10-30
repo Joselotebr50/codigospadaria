@@ -448,25 +448,19 @@ export default function HomePage() {
                 >
                   <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200 border-0 shadow-sm bg-white/90">
                     <CardContent className="p-4">
-                      <div className="flex items-start justify-between gap-2">
+                      <div className="flex items-center gap-3">
+                        {/* Left side: info */}
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-semibold text-sm leading-tight mb-2 truncate" title={product.descricao}>
+                          <h3 className="font-semibold text-sm leading-tight mb-1.5 truncate" title={product.descricao}>
                             {product.descricao}
                           </h3>
-                          <div className="flex flex-wrap gap-1.5 mb-2">
+                          <div className="flex flex-wrap gap-1.5 mb-1.5">
                             <Badge
                               variant="secondary"
                               className="text-xs font-mono px-2"
                               style={{ backgroundColor: 'oklch(0.90 0.04 80)' }}
                             >
                               Sys: {product.codigoSistema}
-                            </Badge>
-                            <Badge
-                              variant="secondary"
-                              className="text-xs font-mono px-2"
-                              style={{ backgroundColor: 'oklch(0.88 0.06 55)', color: 'oklch(0.35 0.08 50)' }}
-                            >
-                              Bal: {product.codigoBalanca}
                             </Badge>
                             <Badge
                               variant="outline"
@@ -484,14 +478,30 @@ export default function HomePage() {
                             </span>
                           </div>
                         </div>
+                        {/* Right side: Código Balança BIG */}
+                        <div className="flex flex-col items-center justify-center flex-shrink-0 ml-2">
+                          <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-0.5">
+                            Bal
+                          </span>
+                          <span
+                            className="font-mono font-bold leading-none"
+                            style={{
+                              fontSize: product.codigoBalanca > 99999 ? '1.4rem' : '1.75rem',
+                              color: 'oklch(0.45 0.10 50)',
+                            }}
+                          >
+                            {product.codigoBalanca}
+                          </span>
+                        </div>
+                        {/* Edit button */}
                         <Button
                           variant="ghost"
                           size="icon"
                           onClick={() => handleEdit(product)}
-                          className="h-9 w-9 flex-shrink-0 hover:bg-amber-50"
-                          style={{ color: 'oklch(0.68 0.15 55)' }}
+                          className="h-8 w-8 flex-shrink-0 hover:bg-amber-50 -mr-1"
+                          style={{ color: 'oklch(0.55 0.10 55)' }}
                         >
-                          <Pencil className="h-4 w-4" />
+                          <Pencil className="h-3.5 w-3.5" />
                         </Button>
                       </div>
                     </CardContent>
