@@ -317,9 +317,11 @@ export default function HomePage() {
         >
           <Card className="border-0 shadow-xl">
             <CardHeader className="text-center pb-2">
-              <div className="mx-auto mb-3 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl" style={{ backgroundColor: 'oklch(0.68 0.15 55)' }}>
-                🍞
-              </div>
+                <img
+                src="/tatico-logo.png"
+                alt="Padaria TATICO"
+                className="mx-auto mb-3 h-20 w-auto object-contain"
+              />
               <CardTitle className="text-2xl font-bold" style={{ color: 'oklch(0.35 0.08 50)' }}>
                 Padaria TATICO
               </CardTitle>
@@ -390,8 +392,11 @@ export default function HomePage() {
       <header className="sticky top-0 z-40 border-b" style={{ backgroundColor: 'oklch(0.68 0.15 55)', borderColor: 'oklch(0.58 0.12 55)' }}>
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">🍞</span>
-            <h1 className="text-lg font-bold text-white tracking-tight">Padaria TATICO</h1>
+            <img
+              src="/tatico-logo.png"
+              alt="TATICO"
+              className="h-10 w-auto object-contain rounded-md bg-white/90 px-1 py-0.5"
+            />
           </div>
           <div className="flex items-center gap-3">
             <span className="text-sm text-white/80 hidden sm:inline">

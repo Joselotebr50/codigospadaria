@@ -1,0 +1,526 @@
+   250→   250→   250→
+   251→   251→   251→    setSaving(true)
+   252→   252→   252→    try {
+   253→   253→   253→      const payload = {
+   254→   254→   254→        descricao: form.descricao,
+   255→   255→   255→        codigoSistema: parseInt(form.codigoSistema),
+   256→   256→   256→        codigoBalanca: parseInt(form.codigoBalanca),
+   257→   257→   257→        unidade: form.unidade,
+   258→   258→   258→        categoria: form.categoria,
+   259→   259→   259→      }
+   260→   260→   260→
+   261→   261→   261→      let res: Response
+   262→   262→   262→      if (editingProduct) {
+   263→   263→   263→        res = await fetch(`/api/products/${editingProduct.id}`, {
+   264→   264→   264→          method: 'PUT',
+   265→   265→   265→          headers: {
+   266→   266→   266→            'Content-Type': 'application/json',
+   267→   267→   267→            'Authorization': `Bearer ${user?.id}`,
+   268→   268→   268→          },
+   269→   269→   269→          body: JSON.stringify(payload),
+   270→   270→   270→        })
+   271→   271→   271→      } else {
+   272→   272→   272→        res = await fetch('/api/products', {
+   273→   273→   273→          method: 'POST',
+   274→   274→   274→          headers: {
+   275→   275→   275→            'Content-Type': 'application/json',
+   276→   276→   276→            'Authorization': `Bearer ${user?.id}`,
+   277→   277→   277→          },
+   278→   278→   278→          body: JSON.stringify(payload),
+   279→   279→   279→        })
+   280→   280→   280→      }
+   281→   281→   281→
+   282→   282→   282→      if (!res.ok) {
+   283→   283→   283→        const data = await res.json()
+   284→   284→   284→        toast.error(data.error || 'Erro ao salvar produto')
+   285→   285→   285→        return
+   286→   286→   286→      }
+   287→   287→   287→
+   288→   288→   288→      toast.success(editingProduct ? 'Produto atualizado!' : 'Produto criado!')
+   289→   289→   289→      setModalOpen(false)
+   290→   290→   290→      fetchProducts()
+   291→   291→   291→    } catch {
+   292→   292→   292→      toast.error('Erro de conexão')
+   293→   293→   293→    } finally {
+   294→   294→   294→      setSaving(false)
+   295→   295→   295→    }
+   296→   296→   296→  }
+   297→   297→   297→
+   298→   298→   298→  // Get filtered count for category chip
+   299→   299→   299→  const getCategoryCount = (catName: string) => {
+   300→   300→   300→    if (catName === 'Todos') return totalCount
+   301→   301→   301→    const found = categories.find((c) => c.name === catName)
+   302→   302→   302→    return found?.count || 0
+   303→   303→   303→  }
+   304→   304→   304→
+   305→   305→   305→  // All categories for display
+   306→   306→   306→  const allCategories = ['Todos', ...CATEGORY_OPTIONS.filter((c) => categories.some((cat) => cat.name === c) || selectedCategory === c)]
+   307→   307→   307→
+   308→   308→   308→  // ==================== LOGIN SCREEN ====================
+   309→   309→   309→  if (!user) {
+   310→   310→   310→    return (
+   311→   311→   311→      <div className="min-h-screen flex items-center justify-center p-4" style={{ backgroundColor: 'oklch(0.96 0.01 85)' }}>
+   312→   312→   312→        <motion.div
+   313→   313→   313→          initial={{ opacity: 0, y: 20 }}
+   314→   314→   314→          animate={{ opacity: 1, y: 0 }}
+   315→   315→   315→          transition={{ duration: 0.5 }}
+   316→   316→   316→          className="w-full max-w-sm"
+   317→   317→   317→        >
+   318→   318→   318→          <Card className="border-0 shadow-xl">
+   319→   319→   319→            <CardHeader className="text-center pb-2">
+   320→   320→   320→              <div className="mx-auto mb-3 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl" style={{ backgroundColor: 'oklch(0.68 0.15 55)' }}>
+   321→   321→   321→                🍞
+   322→   322→   322→              </div>
+   323→   323→   323→              <CardTitle className="text-2xl font-bold" style={{ color: 'oklch(0.35 0.08 50)' }}>
+   324→   324→   324→                Padaria TATICO
+   325→   325→   325→              </CardTitle>
+   326→   326→   326→              <CardDescription className="text-sm">
+   327→   327→   327→                Sistema de Códigos de Produtos
+   328→   328→   328→              </CardDescription>
+   329→   329→   329→            </CardHeader>
+   330→   330→   330→            <CardContent>
+   331→   331→   331→              <form onSubmit={handleLogin} className="space-y-4">
+   332→   332→   332→                <div className="space-y-2">
+   333→   333→   333→                  <Label htmlFor="email">Email</Label>
+   334→   334→   334→                  <Input
+   335→   335→   335→                    id="email"
+   336→   336→   336→                    type="email"
+   337→   337→   337→                    placeholder="admin@padaria.com"
+   338→   338→   338→                    value={loginEmail}
+   339→   339→   339→                    onChange={(e) => setLoginEmail(e.target.value)}
+   340→   340→   340→                    required
+   341→   341→   341→                    className="h-11"
+   342→   342→   342→                    autoComplete="email"
+   343→   343→   343→                  />
+   344→   344→   344→                </div>
+   345→   345→   345→                <div className="space-y-2">
+   346→   346→   346→                  <Label htmlFor="password">Senha</Label>
+   347→   347→   347→                  <Input
+   348→   348→   348→                    id="password"
+   349→   349→   349→                    type="password"
+   350→   350→   350→                    placeholder="••••••••"
+   351→   351→   351→                    value={loginPassword}
+   352→   352→   352→                    onChange={(e) => setLoginPassword(e.target.value)}
+   353→   353→   353→                    required
+   354→   354→   354→                    className="h-11"
+   355→   355→   355→                    autoComplete="current-password"
+   356→   356→   356→                  />
+   357→   357→   357→                </div>
+   358→   358→   358→                {loginError && (
+   359→   359→   359→                  <motion.div
+   360→   360→   360→                    initial={{ opacity: 0, height: 0 }}
+   361→   361→   361→                    animate={{ opacity: 1, height: 'auto' }}
+   362→   362→   362→                    className="text-sm text-destructive bg-destructive/10 p-2 rounded-md"
+   363→   363→   363→                  >
+   364→   364→   364→                    {loginError}
+   365→   365→   365→                  </motion.div>
+   366→   366→   366→                )}
+   367→   367→   367→                <Button
+   368→   368→   368→                  type="submit"
+   369→   369→   369→                  className="w-full h-11 text-base font-semibold"
+   370→   370→   370→                  disabled={loginLoading}
+   371→   371→   371→                  style={{ backgroundColor: 'oklch(0.68 0.15 55)' }}
+   372→   372→   372→                >
+   373→   373→   373→                  {loginLoading ? (
+   374→   374→   374→                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+   375→   375→   375→                  ) : null}
+   376→   376→   376→                  {loginLoading ? 'Entrando...' : 'Entrar'}
+   377→   377→   377→                </Button>
+   378→   378→   378→              </form>
+   379→   379→   379→            </CardContent>
+   380→   380→   380→          </Card>
+   381→   381→   381→        </motion.div>
+   382→   382→   382→      </div>
+   383→   383→   383→    )
+   384→   384→   384→  }
+   385→   385→   385→
+   386→   386→   386→  // ==================== MAIN APP ====================
+   387→   387→   387→  return (
+   388→   388→   388→    <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'oklch(0.96 0.01 85)' }}>
+   389→   389→   389→      {/* Header */}
+   390→   390→   390→      <header className="sticky top-0 z-40 border-b" style={{ backgroundColor: 'oklch(0.68 0.15 55)', borderColor: 'oklch(0.58 0.12 55)' }}>
+   391→   391→   391→        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+   392→   392→   392→          <div className="flex items-center gap-2">
+   393→   393→   393→            <span className="text-2xl">🍞</span>
+   394→   394→   394→            <h1 className="text-lg font-bold text-white tracking-tight">Padaria TATICO</h1>
+   395→   395→   395→          </div>
+   396→   396→   396→          <div className="flex items-center gap-3">
+   397→   397→   397→            <span className="text-sm text-white/80 hidden sm:inline">
+   398→   398→   398→              {user.name}
+   399→   399→   399→            </span>
+   400→   400→   400→            <Button
+   401→   401→   401→              variant="ghost"
+   402→   402→   402→              size="sm"
+   403→   403→   403→              onClick={handleLogout}
+   404→   404→   404→              className="text-white/90 hover:text-white hover:bg-white/20 h-9 px-2"
+   405→   405→   405→            >
+   406→   406→   406→              <LogOut className="h-4 w-4 mr-1" />
+   407→   407→   407→              <span className="hidden sm:inline">Sair</span>
+   408→   408→   408→            </Button>
+   409→   409→   409→          </div>
+   410→   410→   410→        </div>
+   411→   411→   411→      </header>
+   412→   412→   412→
+   413→   413→   413→      {/* Search Bar */}
+   414→   414→   414→      <div className="sticky top-[52px] z-30 border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
+   415→   415→   415→        <div className="max-w-4xl mx-auto px-4 py-3">
+   416→   416→   416→          <div className="relative">
+   417→   417→   417→            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+   418→   418→   418→            <Input
+   419→   419→   419→              placeholder="Buscar por descrição, código sistema ou balança..."
+   420→   420→   420→              value={searchQuery}
+   421→   421→   421→              onChange={(e) => setSearchQuery(e.target.value)}
+   422→   422→   422→              className="pl-9 h-11 bg-white/80 border-0 shadow-sm focus-visible:ring-2"
+   423→   423→   423→              style={{ '--tw-ring-color': 'oklch(0.68 0.15 55)' } as React.CSSProperties}
+   424→   424→   424→            />
+   425→   425→   425→            {searchQuery && (
+   426→   426→   426→              <button
+   427→   427→   427→                onClick={() => setSearchQuery('')}
+   428→   428→   428→                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+   429→   429→   429→              >
+   430→   430→   430→                <X className="h-4 w-4" />
+   431→   431→   431→              </button>
+   432→   432→   432→            )}
+   433→   433→   433→          </div>
+   434→   434→   434→        </div>
+   435→   435→   435→      </div>
+   436→   436→   436→
+   437→   437→   437→      {/* Category Filter Chips */}
+   438→   438→   438→      <div className="sticky top-[108px] z-20 border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
+   439→   439→   439→        <div className="max-w-4xl mx-auto">
+   440→   440→   440→          <div className="flex gap-2 px-4 py-3 overflow-x-auto hide-scrollbar">
+   441→   441→   441→            {/* Archived toggle */}
+   442→   442→   442→            <button
+   443→   443→   443→              onClick={() => { setShowArchived(!showArchived); setSelectedCategory('Todos') }}
+   444→   444→   444→              className={`
+   445→   445→   445→                flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium
+   446→   446→   446→                transition-all duration-200 whitespace-nowrap
+   447→   447→   447→                ${showArchived
+   448→   448→   448→                  ? 'text-white shadow-md scale-105'
+   449→   449→   449→                  : 'bg-white/60 text-foreground/70 hover:bg-white/90 hover:text-foreground shadow-sm'
+   450→   450→   450→                }
+   451→   451→   451→              `}
+   452→   452→   452→              style={showArchived ? { backgroundColor: 'oklch(0.55 0.08 250)' } : undefined}
+   453→   453→   453→            >
+   454→   454→   454→              <span>{showArchived ? <ArchiveRestore className="h-3.5 w-3.5" /> : <Archive className="h-3.5 w-3.5" />}</span>
+   455→   455→   455→              <span>{showArchived ? 'Arquivados' : 'Arquivados'}</span>
+   456→   456→   456→              <span className={`text-xs ${showArchived ? 'text-white/80' : 'text-muted-foreground'}`}>
+   457→   457→   457→                ({archivedCount})
+   458→   458→   458→              </span>
+   459→   459→   459→            </button>
+   460→   460→   460→
+   461→   461→   461→            {!showArchived && allCategories.map((cat) => {
+   462→   462→   462→              const isActive = selectedCategory === cat
+   463→   463→   463→              const emoji = cat === 'Todos' ? '📋' : (CATEGORY_EMOJI[cat] || '📦')
+   464→   464→   464→              const count = getCategoryCount(cat)
+   465→   465→   465→              const displayName = cat === 'Produtos Amanhecidos' ? 'Amanhecidos' : cat
+   466→   466→   466→
+   467→   467→   467→              return (
+   468→   468→   468→                <button
+   469→   469→   469→                  key={cat}
+   470→   470→   470→                  onClick={() => setSelectedCategory(cat)}
+   471→   471→   471→                  className={`
+   472→   472→   472→                    flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-sm font-medium
+   473→   473→   473→                    transition-all duration-200 whitespace-nowrap
+   474→   474→   474→                    ${isActive
+   475→   475→   475→                      ? 'text-white shadow-md scale-105'
+   476→   476→   476→                      : 'bg-white/60 text-foreground/70 hover:bg-white/90 hover:text-foreground shadow-sm'
+   477→   477→   477→                    }
+   478→   478→   478→                  `}
+   479→   479→   479→                  style={isActive ? { backgroundColor: 'oklch(0.68 0.15 55)' } : undefined}
+   480→   480→   480→                >
+   481→   481→   481→                  <span>{emoji}</span>
+   482→   482→   482→                  <span>{displayName}</span>
+   483→   483→   483→                  <span className={`text-xs ${isActive ? 'text-white/80' : 'text-muted-foreground'}`}>
+   484→   484→   484→                    ({count})
+   485→   485→   485→                  </span>
+   486→   486→   486→                </button>
+   487→   487→   487→              )
+   488→   488→   488→            })}
+   489→   489→   489→          </div>
+   490→   490→   490→        </div>
+   491→   491→   491→      </div>
+   492→   492→   492→
+   493→   493→   493→      {/* Product List */}
+   494→   494→   494→      <main className="flex-1 max-w-4xl mx-auto w-full px-4 py-4 pb-24">
+   495→   495→   495→        {productsLoading ? (
+   496→   496→   496→          <div className="flex items-center justify-center py-12">
+   497→   497→   497→            <Loader2 className="h-8 w-8 animate-spin" style={{ color: 'oklch(0.68 0.15 55)' }} />
+   498→   498→   498→          </div>
+   499→   499→   499→        ) : products.length === 0 ? (
+   500→   500→   500→          <div className="text-center py-12 text-muted-foreground">
+   501→   501→   501→            <Package className="h-12 w-12 mx-auto mb-3 opacity-30" />
+   502→   502→   502→            <p className="text-lg font-medium">Nenhum produto encontrado</p>
+   503→   503→   503→            <p className="text-sm mt-1">Tente ajustar os filtros ou adicione um novo produto</p>
+   504→   504→   504→          </div>
+   505→   505→   505→        ) : (
+   506→   506→   506→          <div className="grid gap-3 sm:grid-cols-2">
+   507→   507→   507→            <AnimatePresence mode="popLayout">
+   508→   508→   508→              {products.map((product) => (
+   509→   509→   509→                <motion.div
+   510→   510→   510→                  key={product.id}
+   511→   511→   511→                  layout
+   512→   512→   512→                  initial={{ opacity: 0, scale: 0.95 }}
+   513→   513→   513→                  animate={{ opacity: 1, scale: 1 }}
+   514→   514→   514→                  exit={{ opacity: 0, scale: 0.95 }}
+   515→   515→   515→                  transition={{ duration: 0.2 }}
+   516→   516→   516→                >
+   517→   517→   517→                  <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-200 border-0 shadow-sm bg-white/90">
+   518→   518→   518→                    <CardContent className="p-4">
+   519→   519→   519→                      <div className="flex items-center gap-3">
+   520→   520→   520→                        {/* Left side: info */}
+   521→   521→   521→                        <div className="flex-1 min-w-0">
+   522→   522→   522→                          <h3 className="font-semibold text-sm leading-tight mb-1.5 truncate" title={product.descricao}>
+   523→   523→   523→                            {product.descricao}
+   524→   524→   524→                          </h3>
+   525→   525→   525→                          <div className="flex flex-wrap gap-1.5 mb-1.5">
+   526→   526→   526→                            <Badge
+   527→   527→   527→                              variant="secondary"
+   528→   528→   528→                              className="text-xs font-mono px-2"
+   529→   529→   529→                              style={{ backgroundColor: 'oklch(0.90 0.04 80)' }}
+   530→   530→   530→                            >
+   531→   531→   531→                              Sys: {product.codigoSistema}
+   532→   532→   532→                            </Badge>
+   533→   533→   533→                            <Badge
+   534→   534→   534→                              variant="outline"
+   535→   535→   535→                              className="text-xs px-2"
+   536→   536→   536→                            >
+   537→   537→   537→                              {product.unidade}
+   538→   538→   538→                            </Badge>
+   539→   539→   539→                          </div>
+   540→   540→   540→                          <div className="flex items-center gap-1.5">
+   541→   541→   541→                            <span className="text-xs">
+   542→   542→   542→                              {CATEGORY_EMOJI[product.categoria] || '📦'}
+   543→   543→   543→                            </span>
+   544→   544→   544→                            <span className="text-xs text-muted-foreground">
+   545→   545→   545→                              {product.categoria === 'Produtos Amanhecidos' ? 'Amanhecidos' : product.categoria}
+   546→   546→   546→                            </span>
+   547→   547→   547→                          </div>
+   548→   548→   548→                        </div>
+   549→   549→   549→                        {/* Right side: Código Balança BIG */}
+   550→   550→   550→                        <div className="flex flex-col items-center justify-center flex-shrink-0 ml-2">
+   551→   551→   551→                          <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-0.5">
+   552→   552→   552→                            Bal
+   553→   553→   553→                          </span>
+   554→   554→   554→                          <span
+   555→   555→   555→                            className="font-mono font-bold leading-none"
+   556→   556→   556→                            style={{
+   557→   557→   557→                              fontSize: product.codigoBalanca > 99999 ? '1.4rem' : '1.75rem',
+   558→   558→   558→                              color: 'oklch(0.45 0.10 50)',
+   559→   559→   559→                            }}
+   560→   560→   560→                          >
+   561→   561→   561→                            {product.codigoBalanca}
+   562→   562→   562→                          </span>
+   563→   563→   563→                        </div>
+   564→   564→   564→                        {/* Action buttons */}
+   565→   565→   565→                        <div className="flex flex-col gap-1 flex-shrink-0">
+   566→   566→   566→                          <Button
+   567→   567→   567→                            variant="ghost"
+   568→   568→   568→                            size="icon"
+   569→   569→   569→                            onClick={() => handleEdit(product)}
+   570→   570→   570→                            className="h-7 w-7 hover:bg-amber-50"
+   571→   571→   571→                            style={{ color: 'oklch(0.55 0.10 55)' }}
+   572→   572→   572→                          >
+   573→   573→   573→                            <Pencil className="h-3 w-3" />
+   574→   574→   574→                          </Button>
+   575→   575→   575→                          {product.archived ? (
+   576→   576→   576→                            <>
+   577→   577→   577→                              <Button
+   578→   578→   578→                                variant="ghost"
+   579→   579→   579→                                size="icon"
+   580→   580→   580→                                onClick={() => handleToggleArchive(product)}
+   581→   581→   581→                                className="h-7 w-7 hover:bg-green-50"
+   582→   582→   582→                                style={{ color: 'oklch(0.55 0.15 145)' }}
+   583→   583→   583→                                title="Restaurar"
+   584→   584→   584→                              >
+   585→   585→   585→                                <ArchiveRestore className="h-3 w-3" />
+   586→   586→   586→                              </Button>
+   587→   587→   587→                              <Button
+   588→   588→   588→                                variant="ghost"
+   589→   589→   589→                                size="icon"
+   590→   590→   590→                                onClick={() => handleDelete(product)}
+   591→   591→   591→                                className="h-7 w-7 hover:bg-red-50"
+   592→   592→   592→                                style={{ color: 'oklch(0.55 0.20 25)' }}
+   593→   593→   593→                                title="Excluir permanentemente"
+   594→   594→   594→                              >
+   595→   595→   595→                                <Trash2 className="h-3 w-3" />
+   596→   596→   596→                              </Button>
+   597→   597→   597→                            </>
+   598→   598→   598→                          ) : (
+   599→   599→   599→                            <Button
+   600→   600→   600→                              variant="ghost"
+   601→   601→   601→                              size="icon"
+   602→   602→   602→                              onClick={() => handleToggleArchive(product)}
+   603→   603→   603→                              className="h-7 w-7 hover:bg-slate-50"
+   604→   604→   604→                              style={{ color: 'oklch(0.55 0.08 250)' }}
+   605→   605→   605→                              title="Arquivar"
+   606→   606→   606→                            >
+   607→   607→   607→                              <Archive className="h-3 w-3" />
+   608→   608→   608→                            </Button>
+   609→   609→   609→                          )}
+   610→   610→   610→                        </div>
+   611→   611→   611→                      </div>
+   612→   612→   612→                    </CardContent>
+   613→   613→   613→                  </Card>
+   614→   614→   614→                </motion.div>
+   615→   615→   615→              ))}
+   616→   616→   616→            </AnimatePresence>
+   617→   617→   617→          </div>
+   618→   618→   618→        )}
+   619→   619→   619→
+   620→   620→   620→        {/* Results count */}
+   621→   621→   621→        {!productsLoading && products.length > 0 && (
+   622→   622→   622→          <p className="text-center text-xs text-muted-foreground mt-4 pb-4">
+   623→   623→   623→            {products.length} produto{products.length !== 1 ? 's' : ''} encontrado{products.length !== 1 ? 's' : ''}
+   624→   624→   624→          </p>
+   625→   625→   625→        )}
+   626→   626→   626→      </main>
+   627→   627→   627→
+   628→   628→   628→      {/* FAB - Add Product */}
+   629→   629→   629→      <motion.div
+   630→   630→   630→        className="fixed bottom-6 right-6 z-30"
+   631→   631→   631→        whileHover={{ scale: 1.1 }}
+   632→   632→   632→        whileTap={{ scale: 0.95 }}
+   633→   633→   633→      >
+   634→   634→   634→        <Button
+   635→   635→   635→          onClick={handleAdd}
+   636→   636→   636→          className="h-14 w-14 rounded-full shadow-xl hover:shadow-2xl transition-shadow"
+   637→   637→   637→          style={{ backgroundColor: 'oklch(0.68 0.15 55)' }}
+   638→   638→   638→          size="icon"
+   639→   639→   639→        >
+   640→   640→   640→          <Plus className="h-6 w-6" />
+   641→   641→   641→        </Button>
+   642→   642→   642→      </motion.div>
+   643→   643→   643→
+   644→   644→   644→      {/* Add/Edit Modal */}
+   645→   645→   645→      <Dialog open={modalOpen} onOpenChange={setModalOpen}>
+   646→   646→   646→        <DialogContent className="sm:max-w-md">
+   647→   647→   647→          <DialogHeader>
+   648→   648→   648→            <DialogTitle className="flex items-center gap-2">
+   649→   649→   649→              {editingProduct ? (
+   650→   650→   650→                <>
+   651→   651→   651→                  <Pencil className="h-5 w-5" style={{ color: 'oklch(0.68 0.15 55)' }} />
+   652→   652→   652→                  Editar Produto
+   653→   653→   653→                </>
+   654→   654→   654→              ) : (
+   655→   655→   655→                <>
+   656→   656→   656→                  <Plus className="h-5 w-5" style={{ color: 'oklch(0.68 0.15 55)' }} />
+   657→   657→   657→                  Novo Produto
+   658→   658→   658→                </>
+   659→   659→   659→              )}
+   660→   660→   660→            </DialogTitle>
+   661→   661→   661→          </DialogHeader>
+   662→   662→   662→
+   663→   663→   663→          <div className="space-y-4 py-2">
+   664→   664→   664→            <div className="space-y-2">
+   665→   665→   665→              <Label htmlFor="descricao">Descrição *</Label>
+   666→   666→   666→              <Input
+   667→   667→   667→                id="descricao"
+   668→   668→   668→                placeholder="Ex: BOLO DE CHOCOLATE"
+   669→   669→   669→                value={form.descricao}
+   670→   670→   670→                onChange={(e) => setForm({ ...form, descricao: e.target.value.toUpperCase() })}
+   671→   671→   671→                className="h-11"
+   672→   672→   672→              />
+   673→   673→   673→            </div>
+   674→   674→   674→
+   675→   675→   675→            <div className="grid grid-cols-2 gap-3">
+   676→   676→   676→              <div className="space-y-2">
+   677→   677→   677→                <Label htmlFor="codigoSistema">Código Sistema *</Label>
+   678→   678→   678→                <Input
+   679→   679→   679→                  id="codigoSistema"
+   680→   680→   680→                  type="number"
+   681→   681→   681→                  placeholder="84347"
+   682→   682→   682→                  value={form.codigoSistema}
+   683→   683→   683→                  onChange={(e) => setForm({ ...form, codigoSistema: e.target.value })}
+   684→   684→   684→                  className="h-11 font-mono"
+   685→   685→   685→                />
+   686→   686→   686→              </div>
+   687→   687→   687→              <div className="space-y-2">
+   688→   688→   688→                <Label htmlFor="codigoBalanca">Código Balança *</Label>
+   689→   689→   689→                <Input
+   690→   690→   690→                  id="codigoBalanca"
+   691→   691→   691→                  type="number"
+   692→   692→   692→                  placeholder="146425"
+   693→   693→   693→                  value={form.codigoBalanca}
+   694→   694→   694→                  onChange={(e) => setForm({ ...form, codigoBalanca: e.target.value })}
+   695→   695→   695→                  className="h-11 font-mono"
+   696→   696→   696→                />
+   697→   697→   697→              </div>
+   698→   698→   698→            </div>
+   699→   699→   699→
+   700→   700→   700→            <div className="space-y-2">
+   701→   701→   701→              <Label>Unidade</Label>
+   702→   702→   702→              <Select value={form.unidade} onValueChange={(v) => setForm({ ...form, unidade: v })}>
+   703→   703→   703→                <SelectTrigger className="h-11">
+   704→   704→   704→                  <SelectValue />
+   705→   705→   705→                </SelectTrigger>
+   706→   706→   706→                <SelectContent>
+   707→   707→   707→                  {UNIT_OPTIONS.map((u) => (
+   708→   708→   708→                    <SelectItem key={u} value={u}>{u}</SelectItem>
+   709→   709→   709→                  ))}
+   710→   710→   710→                </SelectContent>
+   711→   711→   711→              </Select>
+   712→   712→   712→            </div>
+   713→   713→   713→
+   714→   714→   714→            <div className="space-y-2">
+   715→   715→   715→              <Label>Categoria</Label>
+   716→   716→   716→              <Select value={form.categoria} onValueChange={(v) => setForm({ ...form, categoria: v })}>
+   717→   717→   717→                <SelectTrigger className="h-11">
+   718→   718→   718→                  <SelectValue />
+   719→   719→   719→                </SelectTrigger>
+   720→   720→   720→                <SelectContent>
+   721→   721→   721→                  {CATEGORY_OPTIONS.map((c) => (
+   722→   722→   722→                    <SelectItem key={c} value={c}>
+   723→   723→   723→                      {CATEGORY_EMOJI[c] || '📦'} {c === 'Produtos Amanhecidos' ? 'Amanhecidos' : c}
+   724→   724→   724→                    </SelectItem>
+   725→   725→   725→                  ))}
+   726→   726→   726→                </SelectContent>
+   727→   727→   727→              </Select>
+   728→   728→   728→            </div>
+   729→   729→   729→          </div>
+   730→   730→   730→
+   731→   731→   731→          <DialogFooter className="gap-2 sm:gap-0">
+   732→   732→   732→            {/* Archive button in edit modal */}
+   733→   733→   733→            {editingProduct && (
+   734→   734→   734→              <Button
+   735→   735→   735→                variant="outline"
+   736→   736→   736→                onClick={() => { handleToggleArchive(editingProduct); setModalOpen(false) }}
+   737→   737→   737→                disabled={saving}
+   738→   738→   738→                className="h-10 gap-1.5"
+   739→   739→   739→                style={{ borderColor: 'oklch(0.70 0.08 250)', color: 'oklch(0.45 0.08 250)' }}
+   740→   740→   740→              >
+   741→   741→   741→                {editingProduct.archived ? (
+   742→   742→   742→                  <><ArchiveRestore className="h-4 w-4" /> Restaurar</>
+   743→   743→   743→                ) : (
+   744→   744→   744→                  <><Archive className="h-4 w-4" /> Arquivar</>
+   745→   745→   745→                )}
+   746→   746→   746→              </Button>
+   747→   747→   747→            )}
+   748→   748→   748→            <div className="flex-1" />
+   749→   749→   749→            <Button
+   750→   750→   750→              variant="outline"
+   751→   751→   751→              onClick={() => setModalOpen(false)}
+   752→   752→   752→              disabled={saving}
+   753→   753→   753→              className="h-10"
+   754→   754→   754→            >
+   755→   755→   755→              Cancelar
+   756→   756→   756→            </Button>
+   757→   757→   757→            <Button
+   758→   758→   758→              onClick={handleSave}
+   759→   759→   759→              disabled={saving}
+   760→   760→   760→              className="h-10"
+   761→   761→   761→              style={{ backgroundColor: 'oklch(0.68 0.15 55)' }}
+   762→   762→   762→            >
+   763→   763→   763→              {saving ? (
+   764→   764→   764→                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+   765→   765→   765→              ) : null}
+   766→   766→   766→              {saving ? 'Salvando...' : 'Salvar'}
+   767→   767→   767→            </Button>
+   768→   768→   768→          </DialogFooter>
+   769→   769→   769→        </DialogContent>
+   770→   770→   770→      </Dialog>
+   771→   771→   771→    </div>
+   772→   772→   772→  )
+   773→   773→   773→}
+
+[showing lines 250-773 of 774; use offset=774 with limit to continue reading]
