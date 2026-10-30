@@ -1,0 +1,1290 @@
+     1→{
+     2→  "fonte": "Padaria - Listas de produtos extraídas de imagens",
+     3→  "data_atualizacao": "2024-06-30",
+     4→  "total_produtos": 182,
+     5→  "resumo_categorias": {
+     6→    "Biscoitos": 13,
+     7→    "Bolos": 32,
+     8→    "Confeitaria": 54,
+     9→    "Pizzas": 7,
+    10→    "Produtos Amanhecidos": 7,
+    11→    "Pães": 52,
+    12→    "Tortas": 17
+    13→  },
+    14→  "produtos": [
+    15→    {
+    16→      "codigo_sistema": 84347,
+    17→      "descricao": "BISCOITO CHIPA TRADICIONAL TATICO",
+    18→      "unidade": "KG",
+    19→      "codigo_balanca": 146425,
+    20→      "categoria": "Biscoitos"
+    21→    },
+    22→    {
+    23→      "codigo_sistema": 84320,
+    24→      "descricao": "BISCOITO DE QUEIJO SUÍÇO TRADICIONAL TATICO",
+    25→      "unidade": "KG",
+    26→      "codigo_balanca": 2604,
+    27→      "categoria": "Biscoitos"
+    28→    },
+    29→    {
+    30→      "codigo_sistema": 83924,
+    31→      "descricao": "BISCOITO DE QUEIJO TATICO",
+    32→      "unidade": "KG",
+    33→      "codigo_balanca": 2301,
+    34→      "categoria": "Biscoitos"
+    35→    },
+    36→    {
+    37→      "codigo_sistema": 83935,
+    38→      "descricao": "BISCOITO INSEPARAVEL 2KG CASADINHO",
+    39→      "unidade": "KG",
+    40→      "codigo_balanca": 35729,
+    41→      "categoria": "Biscoitos"
+    42→    },
+    43→    {
+    44→      "codigo_sistema": 83938,
+    45→      "descricao": "BISCOITO INSEPARAVEL 2KG FLORZINHA",
+    46→      "unidade": "KG",
+    47→      "codigo_balanca": 56519,
+    48→      "categoria": "Biscoitos"
+    49→    },
+    50→    {
+    51→      "codigo_sistema": 83832,
+    52→      "descricao": "BISCOITO INSEPARAVEL PÃO DE MEL 2KG",
+    53→      "unidade": "KG",
+    54→      "codigo_balanca": 56557,
+    55→      "categoria": "Biscoitos"
+    56→    },
+    57→    {
+    58→      "codigo_sistema": 83,
+    59→      "descricao": "BISCOITO PALITO 2KG CHOCOLATE",
+    60→      "unidade": "KG",
+    61→      "codigo_balanca": 56540,
+    62→      "categoria": "Biscoitos"
+    63→    },
+    64→    {
+    65→      "codigo_sistema": 83877,
+    66→      "descricao": "BISCOITO PALITO DE QUEIJO TATICO",
+    67→      "unidade": "KG",
+    68→      "codigo_balanca": 8945,
+    69→      "categoria": "Biscoitos"
+    70→    },
+    71→    {
+    72→      "codigo_sistema": 74,
+    73→      "descricao": "BISCOITO PRONTO 2KG MARGARIDA",
+    74→      "unidade": "KG",
+    75→      "codigo_balanca": 56595,
+    76→      "categoria": "Biscoitos"
+    77→    },
+    78→    {
+    79→      "codigo_sistema": 84151,
+    80→      "descricao": "BISCOITO SEQUILHOS DE COCO TATICO",
+    81→      "unidade": "KG",
+    82→      "codigo_balanca": 3452,
+    83→      "categoria": "Biscoitos"
+    84→    },
+    85→    {
+    86→      "codigo_sistema": 84204,
+    87→      "descricao": "BISCOITO TATICO QUEIJO SUÍÇO MINI",
+    88→      "unidade": "KG",
+    89→      "codigo_balanca": 233763,
+    90→      "categoria": "Biscoitos"
+    91→    },
+    92→    {
+    93→      "codigo_sistema": 84467,
+    94→      "descricao": "COOKIES TATICO BAUNILHA",
+    95→      "unidade": "KG",
+    96→      "codigo_balanca": 258234,
+    97→      "categoria": "Biscoitos"
+    98→    },
+    99→    {
+   100→      "codigo_sistema": 84466,
+   101→      "descricao": "COOKIES TATICO CHOCOLATE",
+   102→      "unidade": "KG",
+   103→      "codigo_balanca": 258210,
+   104→      "categoria": "Biscoitos"
+   105→    },
+   106→    {
+   107→      "codigo_sistema": 84164,
+   108→      "descricao": "BOLO TATICO ABACAXI COM COCO",
+   109→      "unidade": "KG",
+   110→      "codigo_balanca": 68765,
+   111→      "categoria": "Bolos"
+   112→    },
+   113→    {
+   114→      "codigo_sistema": 87136,
+   115→      "descricao": "BOLO TATICO AIPIM",
+   116→      "unidade": "400G",
+   117→      "codigo_balanca": 261517,
+   118→      "categoria": "Bolos"
+   119→    },
+   120→    {
+   121→      "codigo_sistema": 84171,
+   122→      "descricao": "BOLO TATICO BANANA E GRANOLA",
+   123→      "unidade": "KG",
+   124→      "codigo_balanca": 259996,
+   125→      "categoria": "Bolos"
+   126→    },
+   127→    {
+   128→      "codigo_sistema": 87138,
+   129→      "descricao": "BOLO TATICO BAUNILHA",
+   130→      "unidade": "400G",
+   131→      "codigo_balanca": 261500,
+   132→      "categoria": "Bolos"
+   133→    },
+   134→    {
+   135→      "codigo_sistema": 84129,
+   136→      "descricao": "BOLO TATICO BROWNIE PRESTÍGIO",
+   137→      "unidade": "KG",
+   138→      "codigo_balanca": 100465,
+   139→      "categoria": "Bolos"
+   140→    },
+   141→    {
+   142→      "codigo_sistema": 89139,
+   143→      "descricao": "BOLO TATICO CAÇAROLA",
+   144→      "unidade": "400G",
+   145→      "codigo_balanca": 263115,
+   146→      "categoria": "Bolos"
+   147→    },
+   148→    {
+   149→      "codigo_sistema": 87139,
+   150→      "descricao": "BOLO TATICO CENOURA",
+   151→      "unidade": "400G",
+   152→      "codigo_balanca": 261452,
+   153→      "categoria": "Bolos"
+   154→    },
+   155→    {
+   156→      "codigo_sistema": 87123,
+   157→      "descricao": "BOLO TATICO CHOCOLATE",
+   158→      "unidade": "400G",
+   159→      "codigo_balanca": 322751,
+   160→      "categoria": "Bolos"
+   161→    },
+   162→    {
+   163→      "codigo_sistema": 87121,
+   164→      "descricao": "BOLO TATICO COCO",
+   165→      "unidade": "400G",
+   166→      "codigo_balanca": 322768,
+   167→      "categoria": "Bolos"
+   168→    },
+   169→    {
+   170→      "codigo_sistema": 89141,
+   171→      "descricao": "BOLO TATICO CREMOSO ABACAXI COM COCO",
+   172→      "unidade": "400G",
+   173→      "codigo_balanca": 263139,
+   174→      "categoria": "Bolos"
+   175→    },
+   176→    {
+   177→      "codigo_sistema": 89112,
+   178→      "descricao": "BOLO TATICO CREMOSO AMENDOIM",
+   179→      "unidade": "400G",
+   180→      "codigo_balanca": 263085,
+   181→      "categoria": "Bolos"
+   182→    },
+   183→    {
+   184→      "codigo_sistema": 89140,
+   185→      "descricao": "BOLO TATICO CREMOSO BANANA E GRANOLA",
+   186→      "unidade": "400G",
+   187→      "codigo_balanca": 263122,
+   188→      "categoria": "Bolos"
+   189→    },
+   190→    {
+   191→      "codigo_sistema": 89113,
+   192→      "descricao": "BOLO TATICO CREMOSO CAPPUCCINO",
+   193→      "unidade": "400G",
+   194→      "codigo_balanca": 263092,
+   195→      "categoria": "Bolos"
+   196→    },
+   197→    {
+   198→      "codigo_sistema": 84133,
+   199→      "descricao": "BOLO TATICO CREMOSO CENOURA",
+   200→      "unidade": "KG",
+   201→      "codigo_balanca": 63227,
+   202→      "categoria": "Bolos"
+   203→    },
+   204→    {
+   205→      "codigo_sistema": 84166,
+   206→      "descricao": "BOLO TATICO ESPECIARIA",
+   207→      "unidade": "KG",
+   208→      "codigo_balanca": 68833,
+   209→      "categoria": "Bolos"
+   210→    },
+   211→    {
+   212→      "codigo_sistema": 89111,
+   213→      "descricao": "BOLO TATICO FORMIGUEIRO",
+   214→      "unidade": "400G",
+   215→      "codigo_balanca": 263061,
+   216→      "categoria": "Bolos"
+   217→    },
+   218→    {
+   219→      "codigo_sistema": 87135,
+   220→      "descricao": "BOLO TATICO FUBÁ",
+   221→      "unidade": "400G",
+   222→      "codigo_balanca": 261494,
+   223→      "categoria": "Bolos"
+   224→    },
+   225→    {
+   226→      "codigo_sistema": 84531,
+   227→      "descricao": "BOLO TATICO GELADO BRIGADEIRO FATIA",
+   228→      "unidade": "KG",
+   229→      "codigo_balanca": 18326,
+   230→      "categoria": "Bolos"
+   231→    },
+   232→    {
+   233→      "codigo_sistema": 84533,
+   234→      "descricao": "BOLO TATICO GELADO CHOCOLATE FATIA",
+   235→      "unidade": "KG",
+   236→      "codigo_balanca": 18227,
+   237→      "categoria": "Bolos"
+   238→    },
+   239→    {
+   240→      "codigo_sistema": 84528,
+   241→      "descricao": "BOLO TATICO GELADO COCO FATIA",
+   242→      "unidade": "KG",
+   243→      "codigo_balanca": 2394,
+   244→      "categoria": "Bolos"
+   245→    },
+   246→    {
+   247→      "codigo_sistema": 84537,
+   248→      "descricao": "BOLO TATICO GELADO LEITE CONDENSADO FATIA",
+   249→      "unidade": "KG",
+   250→      "codigo_balanca": 18289,
+   251→      "categoria": "Bolos"
+   252→    },
+   253→    {
+   254→      "codigo_sistema": 84530,
+   255→      "descricao": "BOLO TATICO GELADO LEITE NINHO FATIA",
+   256→      "unidade": "KG",
+   257→      "codigo_balanca": 260053,
+   258→      "categoria": "Bolos"
+   259→    },
+   260→    {
+   261→      "codigo_sistema": 93859,
+   262→      "descricao": "BOLO TATICO INGLÊS",
+   263→      "unidade": "UND",
+   264→      "codigo_balanca": 400,
+   265→      "categoria": "Bolos"
+   266→    },
+   267→    {
+   268→      "codigo_sistema": 87132,
+   269→      "descricao": "BOLO TATICO LARANJA",
+   270→      "unidade": "400G",
+   271→      "codigo_balanca": 261487,
+   272→      "categoria": "Bolos"
+   273→    },
+   274→    {
+   275→      "codigo_sistema": 84163,
+   276→      "descricao": "BOLO TATICO LEITE CONDENSADO",
+   277→      "unidade": "KG",
+   278→      "codigo_balanca": 7894,
+   279→      "categoria": "Bolos"
+   280→    },
+   281→    {
+   282→      "codigo_sistema": 87131,
+   283→      "descricao": "BOLO TATICO LEITE CONDENSADO",
+   284→      "unidade": "400G",
+   285→      "codigo_balanca": 261524,
+   286→      "categoria": "Bolos"
+   287→    },
+   288→    {
+   289→      "codigo_sistema": 89137,
+   290→      "descricao": "BOLO TATICO LIMÃO",
+   291→      "unidade": "400G",
+   292→      "codigo_balanca": 263108,
+   293→      "categoria": "Bolos"
+   294→    },
+   295→    {
+   296→      "codigo_sistema": 84141,
+   297→      "descricao": "BOLO TATICO MANÉ PELADO",
+   298→      "unidade": "KG",
+   299→      "codigo_balanca": 2790,
+   300→      "categoria": "Bolos"
+   301→    },
+   302→    {
+   303→      "codigo_sistema": 84170,
+   304→      "descricao": "BOLO TATICO MILHO CREMOSO",
+   305→      "unidade": "KG",
+   306→      "codigo_balanca": 258203,
+   307→      "categoria": "Bolos"
+   308→    },
+   309→    {
+   310→      "codigo_sistema": 84179,
+   311→      "descricao": "BOLO TATICO MOUSSE DE CHOCOLATE",
+   312→      "unidade": "KG",
+   313→      "codigo_balanca": 258180,
+   314→      "categoria": "Bolos"
+   315→    },
+   316→    {
+   317→      "codigo_sistema": 84162,
+   318→      "descricao": "BOLO TATICO NEGA MALUCA",
+   319→      "unidade": "KG",
+   320→      "codigo_balanca": 63203,
+   321→      "categoria": "Bolos"
+   322→    },
+   323→    {
+   324→      "codigo_sistema": 84168,
+   325→      "descricao": "BOLO TATICO PÃO DE MEL",
+   326→      "unidade": "KG",
+   327→      "codigo_balanca": 258197,
+   328→      "categoria": "Bolos"
+   329→    },
+   330→    {
+   331→      "codigo_sistema": 83813,
+   332→      "descricao": "BEIJINHO TATICO",
+   333→      "unidade": "KG",
+   334→      "codigo_balanca": 2233,
+   335→      "categoria": "Confeitaria"
+   336→    },
+   337→    {
+   338→      "codigo_sistema": 83821,
+   339→      "descricao": "BEM CASADO TATICO PÃO DE MEL",
+   340→      "unidade": "KG",
+   341→      "codigo_balanca": 63258,
+   342→      "categoria": "Confeitaria"
+   343→    },
+   344→    {
+   345→      "codigo_sistema": 85777,
+   346→      "descricao": "BOMBOCADO TATICO",
+   347→      "unidade": "KG",
+   348→      "codigo_balanca": 2561,
+   349→      "categoria": "Confeitaria"
+   350→    },
+   351→    {
+   352→      "codigo_sistema": 84234,
+   353→      "descricao": "BRIGADEIRO TATICO",
+   354→      "unidade": "KG",
+   355→      "codigo_balanca": 2585,
+   356→      "categoria": "Confeitaria"
+   357→    },
+   358→    {
+   359→      "codigo_sistema": 84235,
+   360→      "descricao": "BROA DOCE TATICO",
+   361→      "unidade": "KG",
+   362→      "codigo_balanca": 146937,
+   363→      "categoria": "Confeitaria"
+   364→    },
+   365→    {
+   366→      "codigo_sistema": 84327,
+   367→      "descricao": "BROA TEMPERADA TATICO",
+   368→      "unidade": "KG",
+   369→      "codigo_balanca": 147019,
+   370→      "categoria": "Confeitaria"
+   371→    },
+   372→    {
+   373→      "codigo_sistema": 84462,
+   374→      "descricao": "COCADINHA TATICO",
+   375→      "unidade": "KG",
+   376→      "codigo_balanca": 39147,
+   377→      "categoria": "Confeitaria"
+   378→    },
+   379→    {
+   380→      "codigo_sistema": 84505,
+   381→      "descricao": "CUPCAKE TATICO CHOCOLATE",
+   382→      "unidade": "KG",
+   383→      "codigo_balanca": 2813,
+   384→      "categoria": "Confeitaria"
+   385→    },
+   386→    {
+   387→      "codigo_sistema": 83822,
+   388→      "descricao": "DOCINHO TATICO LEITE NINHO",
+   389→      "unidade": "KG",
+   390→      "codigo_balanca": 39130,
+   391→      "categoria": "Confeitaria"
+   392→    },
+   393→    {
+   394→      "codigo_sistema": 83845,
+   395→      "descricao": "DONUTS TATICO CREME DE AVELÃ",
+   396→      "unidade": "KG",
+   397→      "codigo_balanca": 258173,
+   398→      "categoria": "Confeitaria"
+   399→    },
+   400→    {
+   401→      "codigo_sistema": 83841,
+   402→      "descricao": "DONUTS TATICO LEITINHO",
+   403→      "unidade": "KG",
+   404→      "codigo_balanca": 221139,
+   405→      "categoria": "Confeitaria"
+   406→    },
+   407→    {
+   408→      "codigo_sistema": 83921,
+   409→      "descricao": "ENROLADINHO DE QUEIJO TATICO",
+   410→      "unidade": "KG",
+   411→      "codigo_balanca": 2707,
+   412→      "categoria": "Confeitaria"
+   413→    },
+   414→    {
+   415→      "codigo_sistema": 89197,
+   416→      "descricao": "ENROLADINHO DE SALSICHA TATICO",
+   417→      "unidade": "KG",
+   418→      "codigo_balanca": 2714,
+   419→      "categoria": "Confeitaria"
+   420→    },
+   421→    {
+   422→      "codigo_sistema": 84034,
+   423→      "descricao": "FARINHA DE ROSCA TATICO",
+   424→      "unidade": "KG",
+   425→      "codigo_balanca": 2721,
+   426→      "categoria": "Confeitaria"
+   427→    },
+   428→    {
+   429→      "codigo_sistema": 84049,
+   430→      "descricao": "FRANGO ASSADO TATICO",
+   431→      "unidade": "KG",
+   432→      "codigo_balanca": 15257,
+   433→      "categoria": "Confeitaria"
+   434→    },
+   435→    {
+   436→      "codigo_sistema": 84378,
+   437→      "descricao": "GUEIJADINHA TATICO",
+   438→      "unidade": "KG",
+   439→      "codigo_balanca": 3254,
+   440→      "categoria": "Confeitaria"
+   441→    },
+   442→    {
+   443→      "codigo_sistema": 84261,
+   444→      "descricao": "MARIA MOLE TATICO",
+   445→      "unidade": "KG",
+   446→      "codigo_balanca": 2837,
+   447→      "categoria": "Confeitaria"
+   448→    },
+   449→    {
+   450→      "codigo_sistema": 84297,
+   451→      "descricao": "MINI SALGADOS SORTIDOS TATICO",
+   452→      "unidade": "KG",
+   453→      "codigo_balanca": 15196,
+   454→      "categoria": "Confeitaria"
+   455→    },
+   456→    {
+   457→      "codigo_sistema": 84318,
+   458→      "descricao": "MOUSSE TATICO CHOCOLATE",
+   459→      "unidade": "KG",
+   460→      "codigo_balanca": 2851,
+   461→      "categoria": "Confeitaria"
+   462→    },
+   463→    {
+   464→      "codigo_sistema": 84149,
+   465→      "descricao": "MOUSSE TATICO LIMÃO",
+   466→      "unidade": "KG",
+   467→      "codigo_balanca": 260060,
+   468→      "categoria": "Confeitaria"
+   469→    },
+   470→    {
+   471→      "codigo_sistema": 84326,
+   472→      "descricao": "MOUSSE TATICO MARACUJÁ",
+   473→      "unidade": "KG",
+   474→      "codigo_balanca": 2868,
+   475→      "categoria": "Confeitaria"
+   476→    },
+   477→    {
+   478→      "codigo_sistema": 84386,
+   479→      "descricao": "MOUSSE TATICO MORANGO",
+   480→      "unidade": "KG",
+   481→      "codigo_balanca": 2875,
+   482→      "categoria": "Confeitaria"
+   483→    },
+   484→    {
+   485→      "codigo_sistema": 87280,
+   486→      "descricao": "MP BASE PARA TORTELE N6 INSUMO",
+   487→      "unidade": "KG",
+   488→      "codigo_balanca": 253255,
+   489→      "categoria": "Confeitaria"
+   490→    },
+   491→    {
+   492→      "codigo_sistema": 98726,
+   493→      "descricao": "PANETONE TATICO FRUTAS GO 380GR",
+   494→      "unidade": "UND",
+   495→      "codigo_balanca": 1208,
+   496→      "categoria": "Confeitaria"
+   497→    },
+   498→    {
+   499→      "codigo_sistema": 95730,
+   500→      "descricao": "PANETONE TATICO GOTAS CHOC GO 380GR",
+   501→      "unidade": "UND",
+   502→      "codigo_balanca": 1211,
+   503→      "categoria": "Confeitaria"
+   504→    },
+   505→    {
+   506→      "codigo_sistema": 94013,
+   507→      "descricao": "PANETONE TATICO TRUFADO NINHO COM BRIGADEIRO",
+   508→      "unidade": "750G",
+   509→      "codigo_balanca": 812,
+   510→      "categoria": "Confeitaria"
+   511→    },
+   512→    {
+   513→      "codigo_sistema": 55659,
+   514→      "descricao": "PAVÊ TÁTICO BOMBOM",
+   515→      "unidade": "KG",
+   516→      "codigo_balanca": 55659,
+   517→      "categoria": "Confeitaria"
+   518→    },
+   519→    {
+   520→      "codigo_sistema": 49344,
+   521→      "descricao": "PAVÊ TÁTICO CHOCOLATE",
+   522→      "unidade": "KG",
+   523→      "codigo_balanca": 49344,
+   524→      "categoria": "Confeitaria"
+   525→    },
+   526→    {
+   527→      "codigo_sistema": 44820,
+   528→      "descricao": "PAVÊ TÁTICO MORANGO",
+   529→      "unidade": "KG",
+   530→      "codigo_balanca": 44820,
+   531→      "categoria": "Confeitaria"
+   532→    },
+   533→    {
+   534→      "codigo_sistema": 326865,
+   535→      "descricao": "PIZZA TÁTICO BROTINHO CALABRESA",
+   536→      "unidade": "KG",
+   537→      "codigo_balanca": 326865,
+   538→      "categoria": "Confeitaria"
+   539→    },
+   540→    {
+   541→      "codigo_sistema": 263153,
+   542→      "descricao": "PIZZA TÁTICO BROTINHO MARGUERITA",
+   543→      "unidade": "KG",
+   544→      "codigo_balanca": 263153,
+   545→      "categoria": "Confeitaria"
+   546→    },
+   547→    {
+   548→      "codigo_sistema": 84354,
+   549→      "descricao": "PUDIM DE LEITE CONDENSADO TATICO",
+   550→      "unidade": "KG",
+   551→      "codigo_balanca": 8976,
+   552→      "categoria": "Confeitaria"
+   553→    },
+   554→    {
+   555→      "codigo_sistema": 84357,
+   556→      "descricao": "PUDIM QUATRO LEITES TATICO",
+   557→      "unidade": "KG",
+   558→      "codigo_balanca": 260066,
+   559→      "categoria": "Confeitaria"
+   560→    },
+   561→    {
+   562→      "codigo_sistema": 84003,
+   563→      "descricao": "ROCAMBOLE TATICO CHOCOLATE",
+   564→      "unidade": "KG",
+   565→      "codigo_balanca": 6170,
+   566→      "categoria": "Confeitaria"
+   567→    },
+   568→    {
+   569→      "codigo_sistema": 84006,
+   570→      "descricao": "ROCAMBOLE TATICO DOCE DE LEITE",
+   571→      "unidade": "KG",
+   572→      "codigo_balanca": 197645,
+   573→      "categoria": "Confeitaria"
+   574→    },
+   575→    {
+   576→      "codigo_sistema": 84421,
+   577→      "descricao": "ROSCA AÇÚCAR TATICO",
+   578→      "unidade": "KG",
+   579→      "codigo_balanca": 20864,
+   580→      "categoria": "Confeitaria"
+   581→    },
+   582→    {
+   583→      "codigo_sistema": 84031,
+   584→      "descricao": "ROSCA BRIOCHE COM CREME TATICO",
+   585→      "unidade": "KG",
+   586→      "codigo_balanca": 258715,
+   587→      "categoria": "Confeitaria"
+   588→    },
+   589→    {
+   590→      "codigo_sistema": 84252,
+   591→      "descricao": "ROSCA CREME COM COCO TATICO",
+   592→      "unidade": "KG",
+   593→      "codigo_balanca": 3375,
+   594→      "categoria": "Confeitaria"
+   595→    },
+   596→    {
+   597→      "codigo_sistema": 84408,
+   598→      "descricao": "ROSCA CREME E AÇÚCAR TATICO",
+   599→      "unidade": "KG",
+   600→      "codigo_balanca": 36019,
+   601→      "categoria": "Confeitaria"
+   602→    },
+   603→    {
+   604→      "codigo_sistema": 90844,
+   605→      "descricao": "ROSCA DE CANELA TATICO",
+   606→      "unidade": "KG",
+   607→      "codigo_balanca": 2344,
+   608→      "categoria": "Confeitaria"
+   609→    },
+   610→    {
+   611→      "codigo_sistema": 84425,
+   612→      "descricao": "ROSCA DE LEITE NINHO TATICO",
+   613→      "unidade": "KG",
+   614→      "codigo_balanca": 40458,
+   615→      "categoria": "Confeitaria"
+   616→    },
+   617→    {
+   618→      "codigo_sistema": 84406,
+   619→      "descricao": "ROSCA FRITA TATICO",
+   620→      "unidade": "KG",
+   621→      "codigo_balanca": 3421,
+   622→      "categoria": "Confeitaria"
+   623→    },
+   624→    {
+   625→      "codigo_sistema": 84262,
+   626→      "descricao": "ROSCA HÚNGARA TATICO",
+   627→      "unidade": "KG",
+   628→      "codigo_balanca": 2384,
+   629→      "categoria": "Confeitaria"
+   630→    },
+   631→    {
+   632→      "codigo_sistema": 84417,
+   633→      "descricao": "ROSCA LÍNGUA DE SOGRA TATICO",
+   634→      "unidade": "KG",
+   635→      "codigo_balanca": 199714,
+   636→      "categoria": "Confeitaria"
+   637→    },
+   638→    {
+   639→      "codigo_sistema": 84411,
+   640→      "descricao": "ROSCA SAMANTA TATICO",
+   641→      "unidade": "KG",
+   642→      "codigo_balanca": 3428,
+   643→      "categoria": "Confeitaria"
+   644→    },
+   645→    {
+   646→      "codigo_sistema": 84582,
+   647→      "descricao": "ROSCA TRANÇA COCO TATICO",
+   648→      "unidade": "KG",
+   649→      "codigo_balanca": 260497,
+   650→      "categoria": "Confeitaria"
+   651→    },
+   652→    {
+   653→      "codigo_sistema": 90918,
+   654→      "descricao": "SALGADO FOLHADO FRANGO BACON",
+   655→      "unidade": "KG",
+   656→      "codigo_balanca": 333,
+   657→      "categoria": "Confeitaria"
+   658→    },
+   659→    {
+   660→      "codigo_sistema": 84503,
+   661→      "descricao": "SANDUÍCHE NATURAL PÃO DE FORMA TATICO",
+   662→      "unidade": "KG",
+   663→      "codigo_balanca": 306779,
+   664→      "categoria": "Confeitaria"
+   665→    },
+   666→    {
+   667→      "codigo_sistema": 84498,
+   668→      "descricao": "SANDUÍCHE NATURAL PÃO FRANCÊS TATICO",
+   669→      "unidade": "KG",
+   670→      "codigo_balanca": 5180,
+   671→      "categoria": "Confeitaria"
+   672→    },
+   673→    {
+   674→      "codigo_sistema": 84361,
+   675→      "descricao": "SONHO TATICO BAUNILHA",
+   676→      "unidade": "KG",
+   677→      "codigo_balanca": 14713,
+   678→      "categoria": "Confeitaria"
+   679→    },
+   680→    {
+   681→      "codigo_sistema": 84351,
+   682→      "descricao": "SONHO TATICO DOCE DE LEITE",
+   683→      "unidade": "KG",
+   684→      "codigo_balanca": 1415,
+   685→      "categoria": "Confeitaria"
+   686→    },
+   687→    {
+   688→      "codigo_sistema": 84383,
+   689→      "descricao": "SUSPIRO TATICO",
+   690→      "unidade": "KG",
+   691→      "codigo_balanca": 3423,
+   692→      "categoria": "Confeitaria"
+   693→    },
+   694→    {
+   695→      "codigo_sistema": 84418,
+   696→      "descricao": "TORRADA TATICO",
+   697→      "unidade": "KG",
+   698→      "codigo_balanca": 3450,
+   699→      "categoria": "Confeitaria"
+   700→    },
+   701→    {
+   702→      "codigo_sistema": 84424,
+   703→      "descricao": "TORRADA TATICO TEMPERADA",
+   704→      "unidade": "KG",
+   705→      "codigo_balanca": 97507,
+   706→      "categoria": "Confeitaria"
+   707→    },
+   708→    {
+   709→      "codigo_sistema": 89290,
+   710→      "descricao": "PIZZA TATICO BROTINHO MUSSARELA",
+   711→      "unidade": "KG",
+   712→      "codigo_balanca": 265177,
+   713→      "categoria": "Pizzas"
+   714→    },
+   715→    {
+   716→      "codigo_sistema": 92992,
+   717→      "descricao": "PIZZA TATICO BROTINHO PRESUNTO",
+   718→      "unidade": "KG",
+   719→      "codigo_balanca": 263160,
+   720→      "categoria": "Pizzas"
+   721→    },
+   722→    {
+   723→      "codigo_sistema": 91552,
+   724→      "descricao": "PIZZA TATICO MÉDIA CALABRESA",
+   725→      "unidade": "KG",
+   726→      "codigo_balanca": 522,
+   727→      "categoria": "Pizzas"
+   728→    },
+   729→    {
+   730→      "codigo_sistema": 84305,
+   731→      "descricao": "PIZZA TATICO MÉDIA CALABRESA PEDAÇO FATIA",
+   732→      "unidade": "KG",
+   733→      "codigo_balanca": 24716,
+   734→      "categoria": "Pizzas"
+   735→    },
+   736→    {
+   737→      "codigo_sistema": 91554,
+   738→      "descricao": "PIZZA TATICO MÉDIA MARGUERITA",
+   739→      "unidade": "KG",
+   740→      "codigo_balanca": 524,
+   741→      "categoria": "Pizzas"
+   742→    },
+   743→    {
+   744→      "codigo_sistema": 84304,
+   745→      "descricao": "PIZZA TATICO MÉDIA MUSSARELA",
+   746→      "unidade": "KG",
+   747→      "codigo_balanca": 51064,
+   748→      "categoria": "Pizzas"
+   749→    },
+   750→    {
+   751→      "codigo_sistema": 97853,
+   752→      "descricao": "PIZZA TATICO MÉDIA PRESUNTO",
+   753→      "unidade": "KG",
+   754→      "codigo_balanca": 525,
+   755→      "categoria": "Pizzas"
+   756→    },
+   757→    {
+   758→      "codigo_sistema": 88361,
+   759→      "descricao": "PRODUTO AMANHECIDO TATICO GO BISCOITO CHIPA",
+   760→      "unidade": "KG",
+   761→      "codigo_balanca": 246293,
+   762→      "categoria": "Produtos Amanhecidos"
+   763→    },
+   764→    {
+   765→      "codigo_sistema": 83947,
+   766→      "descricao": "PRODUTO AMANHECIDO TATICO GO BISCOITO QUEIJO",
+   767→      "unidade": "KG",
+   768→      "codigo_balanca": 40495,
+   769→      "categoria": "Produtos Amanhecidos"
+   770→    },
+   771→    {
+   772→      "codigo_sistema": 83950,
+   773→      "descricao": "PRODUTO AMANHECIDO TATICO GO BISCOITO QUEIJO SUÍÇO",
+   774→      "unidade": "KG",
+   775→      "codigo_balanca": 246538,
+   776→      "categoria": "Produtos Amanhecidos"
+   777→    },
+   778→    {
+   779→      "codigo_sistema": 89222,
+   780→      "descricao": "PRODUTO AMANHECIDO TATICO GO BISCOITO SUÍÇO",
+   781→      "unidade": "KG",
+   782→      "codigo_balanca": 249164,
+   783→      "categoria": "Produtos Amanhecidos"
+   784→    },
+   785→    {
+   786→      "codigo_sistema": 89207,
+   787→      "descricao": "PRODUTO AMANHECIDO TATICO GO BROA DOCE",
+   788→      "unidade": "KG",
+   789→      "codigo_balanca": 245722,
+   790→      "categoria": "Produtos Amanhecidos"
+   791→    },
+   792→    {
+   793→      "codigo_sistema": 90899,
+   794→      "descricao": "PRODUTO AMANHECIDO TATICO GO BROA TEMPERADA",
+   795→      "unidade": "KG",
+   796→      "codigo_balanca": 245791,
+   797→      "categoria": "Produtos Amanhecidos"
+   798→    },
+   799→    {
+   800→      "codigo_sistema": 89202,
+   801→      "descricao": "PRODUTO AMANHECIDO TATICO GO PÃO DE QUEIJO",
+   802→      "unidade": "KG",
+   803→      "codigo_balanca": 10986,
+   804→      "categoria": "Produtos Amanhecidos"
+   805→    },
+   806→    {
+   807→      "codigo_sistema": 90916,
+   808→      "descricao": "CROISSANT",
+   809→      "unidade": "KG",
+   810→      "codigo_balanca": 351,
+   811→      "categoria": "Pães"
+   812→    },
+   813→    {
+   814→      "codigo_sistema": 102196,
+   815→      "descricao": "MINI PÃO BAGUETE ERVAS FINAS",
+   816→      "unidade": "KG",
+   817→      "codigo_balanca": 1985,
+   818→      "categoria": "Pães"
+   819→    },
+   820→    {
+   821→      "codigo_sistema": 102194,
+   822→      "descricao": "MINI PÃO BAGUETE PARMESÃO",
+   823→      "unidade": "KG",
+   824→      "codigo_balanca": 1984,
+   825→      "categoria": "Pães"
+   826→    },
+   827→    {
+   828→      "codigo_sistema": 322713,
+   829→      "descricao": "PETA TÁTICO POLVILHO AZEDO",
+   830→      "unidade": "150G",
+   831→      "codigo_balanca": 322713,
+   832→      "categoria": "Pães"
+   833→    },
+   834→    {
+   835→      "codigo_sistema": 322706,
+   836→      "descricao": "PETÃO TÁTICO DOCE",
+   837→      "unidade": "250G",
+   838→      "codigo_balanca": 322706,
+   839→      "categoria": "Pães"
+   840→    },
+   841→    {
+   842→      "codigo_sistema": 34548,
+   843→      "descricao": "PETÃO TÁTICO DOCE",
+   844→      "unidade": "KG",
+   845→      "codigo_balanca": 34548,
+   846→      "categoria": "Pães"
+   847→    },
+   848→    {
+   849→      "codigo_sistema": 34531,
+   850→      "descricao": "PETÃO TÁTICO POLVILHO AZEDO",
+   851→      "unidade": "KG",
+   852→      "codigo_balanca": 34531,
+   853→      "categoria": "Pães"
+   854→    },
+   855→    {
+   856→      "codigo_sistema": 322690,
+   857→      "descricao": "PÃO AMIGO TÁTICO",
+   858→      "unidade": "200G",
+   859→      "codigo_balanca": 322690,
+   860→      "categoria": "Pães"
+   861→    },
+   862→    {
+   863→      "codigo_sistema": 90898,
+   864→      "descricao": "PÃO AUSTRALIANO",
+   865→      "unidade": "KG",
+   866→      "codigo_balanca": 320,
+   867→      "categoria": "Pães"
+   868→    },
+   869→    {
+   870→      "codigo_sistema": 102204,
+   871→      "descricao": "PÃO BAGUETE CALABRESA",
+   872→      "unidade": "KG",
+   873→      "codigo_balanca": 1991,
+   874→      "categoria": "Pães"
+   875→    },
+   876→    {
+   877→      "codigo_sistema": 102200,
+   878→      "descricao": "PÃO BAGUETE DE TORRESMO",
+   879→      "unidade": "KG",
+   880→      "codigo_balanca": 1989,
+   881→      "categoria": "Pães"
+   882→    },
+   883→    {
+   884→      "codigo_sistema": 102197,
+   885→      "descricao": "PÃO BAGUETE ERVAS FINAS",
+   886→      "unidade": "KG",
+   887→      "codigo_balanca": 1967,
+   888→      "categoria": "Pães"
+   889→    },
+   890→    {
+   891→      "codigo_sistema": 102198,
+   892→      "descricao": "PÃO BAGUETE GERGELIM",
+   893→      "unidade": "KG",
+   894→      "codigo_balanca": 1988,
+   895→      "categoria": "Pães"
+   896→    },
+   897→    {
+   898→      "codigo_sistema": 102195,
+   899→      "descricao": "PÃO BAGUETE PARMESÃO",
+   900→      "unidade": "KG",
+   901→      "codigo_balanca": 1985,
+   902→      "categoria": "Pães"
+   903→    },
+   904→    {
+   905→      "codigo_sistema": 83096,
+   906→      "descricao": "PÃO BISNAGUINHA TÁTICO",
+   907→      "unidade": "300G",
+   908→      "codigo_balanca": 83096,
+   909→      "categoria": "Pães"
+   910→    },
+   911→    {
+   912→      "codigo_sistema": 87166,
+   913→      "descricao": "PÃO BISNAGUITO TATICO",
+   914→      "unidade": "300G",
+   915→      "codigo_balanca": 83225,
+   916→      "categoria": "Pães"
+   917→    },
+   918→    {
+   919→      "codigo_sistema": 84276,
+   920→      "descricao": "PÃO BRIOCHE FRUTAS",
+   921→      "unidade": "350G",
+   922→      "codigo_balanca": 258708,
+   923→      "categoria": "Pães"
+   924→    },
+   925→    {
+   926→      "codigo_sistema": 84274,
+   927→      "descricao": "PÃO BRIOCHE TATICO COM GERGELIM",
+   928→      "unidade": "300G",
+   929→      "codigo_balanca": 258524,
+   930→      "categoria": "Pães"
+   931→    },
+   932→    {
+   933→      "codigo_sistema": 84255,
+   934→      "descricao": "PÃO BRIOCHE TATICO FORMA",
+   935→      "unidade": "300G",
+   936→      "codigo_balanca": 258692,
+   937→      "categoria": "Pães"
+   938→    },
+   939→    {
+   940→      "codigo_sistema": 84273,
+   941→      "descricao": "PÃO BRIOCHE TATICO PRESTÍGIO",
+   942→      "unidade": "KG",
+   943→      "codigo_balanca": 49337,
+   944→      "categoria": "Pães"
+   945→    },
+   946→    {
+   947→      "codigo_sistema": 84278,
+   948→      "descricao": "PÃO BRIOCHE TATICO RAINHA",
+   949→      "unidade": "350G",
+   950→      "codigo_balanca": 260633,
+   951→      "categoria": "Pães"
+   952→    },
+   953→    {
+   954→      "codigo_sistema": 322720,
+   955→      "descricao": "PÃO BRIOCHINHO TÁTICO",
+   956→      "unidade": "300G",
+   957→      "codigo_balanca": 322720,
+   958→      "categoria": "Pães"
+   959→    },
+   960→    {
+   961→      "codigo_sistema": 102193,
+   962→      "descricao": "PÃO DE ABÓBORA",
+   963→      "unidade": "KG",
+   964→      "codigo_balanca": 1983,
+   965→      "categoria": "Pães"
+   966→    },
+   967→    {
+   968→      "codigo_sistema": 322645,
+   969→      "descricao": "PÃO DE AÇÚCAR TÁTICO",
+   970→      "unidade": "300G",
+   971→      "codigo_balanca": 322645,
+   972→      "categoria": "Pães"
+   973→    },
+   974→    {
+   975→      "codigo_sistema": 322676,
+   976→      "descricao": "PÃO DE BATATA TÁTICO",
+   977→      "unidade": "300G",
+   978→      "codigo_balanca": 322676,
+   979→      "categoria": "Pães"
+   980→    },
+   981→    {
+   982→      "codigo_sistema": 322669,
+   983→      "descricao": "PÃO DE COCO TÁTICO",
+   984→      "unidade": "300G",
+   985→      "codigo_balanca": 322669,
+   986→      "categoria": "Pães"
+   987→    },
+   988→    {
+   989→      "codigo_sistema": 94817,
+   990→      "descricao": "PÃO DE FORMA INTEGRAL TATICO",
+   991→      "unidade": "450G",
+   992→      "codigo_balanca": 406,
+   993→      "categoria": "Pães"
+   994→    },
+   995→    {
+   996→      "codigo_sistema": 49061,
+   997→      "descricao": "PÃO DE FORMA TÁTICO",
+   998→      "unidade": "350G",
+   999→      "codigo_balanca": 49061,
+  1000→      "categoria": "Pães"
+  1001→    },
+  1002→    {
+  1003→      "codigo_sistema": 107073,
+  1004→      "descricao": "PÃO DE GUEIJO TRADICIONAL TATICO",
+  1005→      "unidade": "KG",
+  1006→      "codigo_balanca": 2652,
+  1007→      "categoria": "Pães"
+  1008→    },
+  1009→    {
+  1010→      "codigo_sistema": 322737,
+  1011→      "descricao": "PÃO DE HAMBÚRGUER COM GERGELIM TÁTICO",
+  1012→      "unidade": "300G",
+  1013→      "codigo_balanca": 322737,
+  1014→      "categoria": "Pães"
+  1015→    },
+  1016→    {
+  1017→      "codigo_sistema": 73110,
+  1018→      "descricao": "PÃO DE HAMBÚRGUER TRADICIONAL TÁTICO",
+  1019→      "unidade": "300G",
+  1020→      "codigo_balanca": 73110,
+  1021→      "categoria": "Pães"
+  1022→    },
+  1023→    {
+  1024→      "codigo_sistema": 261074,
+  1025→      "descricao": "PÃO DE LEITE TÁTICO",
+  1026→      "unidade": "300G",
+  1027→      "codigo_balanca": 261074,
+  1028→      "categoria": "Pães"
+  1029→    },
+  1030→    {
+  1031→      "codigo_sistema": 322638,
+  1032→      "descricao": "PÃO DE MILHO TÁTICO",
+  1033→      "unidade": "300G",
+  1034→      "codigo_balanca": 322638,
+  1035→      "categoria": "Pães"
+  1036→    },
+  1037→    {
+  1038→      "codigo_sistema": 52566,
+  1039→      "descricao": "PÃO DE QUEIJO MINI",
+  1040→      "unidade": "KG",
+  1041→      "codigo_balanca": 52566,
+  1042→      "categoria": "Pães"
+  1043→    },
+  1044→    {
+  1045→      "codigo_sistema": 3100,
+  1046→      "descricao": "PÃO DE QUEIJO TRADICIONAL TÁTICO",
+  1047→      "unidade": "KG",
+  1048→      "codigo_balanca": 3100,
+  1049→      "categoria": "Pães"
+  1050→    },
+  1051→    {
+  1052→      "codigo_sistema": 322621,
+  1053→      "descricao": "PÃO FAZENDA TÁTICO",
+  1054→      "unidade": "250G",
+  1055→      "codigo_balanca": 322621,
+  1056→      "categoria": "Pães"
+  1057→    },
+  1058→    {
+  1059→      "codigo_sistema": 202022,
+  1060→      "descricao": "PÃO FRANCÊS",
+  1061→      "unidade": "KG",
+  1062→      "codigo_balanca": 202022,
+  1063→      "categoria": "Pães"
+  1064→    },
+  1065→    {
+  1066→      "codigo_sistema": 84090,
+  1067→      "descricao": "PÃO FRANCÊS BAGUETE",
+  1068→      "unidade": "KG",
+  1069→      "codigo_balanca": 79402,
+  1070→      "categoria": "Pães"
+  1071→    },
+  1072→    {
+  1073→      "codigo_sistema": 102202,
+  1074→      "descricao": "PÃO FRANCÊS BOLA",
+  1075→      "unidade": "KG",
+  1076→      "codigo_balanca": 1990,
+  1077→      "categoria": "Pães"
+  1078→    },
+  1079→    {
+  1080→      "codigo_sistema": 84096,
+  1081→      "descricao": "PÃO FRANCÊS INTEGRAL",
+  1082→      "unidade": "KG",
+  1083→      "codigo_balanca": 100502,
+  1084→      "categoria": "Pães"
+  1085→    },
+  1086→    {
+  1087→      "codigo_sistema": 102191,
+  1088→      "descricao": "PÃO HAMBÚRGUER AUSTRALIANO",
+  1089→      "unidade": "KG",
+  1090→      "codigo_balanca": 1982,
+  1091→      "categoria": "Pães"
+  1092→    },
+  1093→    {
+  1094→      "codigo_sistema": 73134,
+  1095→      "descricao": "PÃO HOT DOG TRADICIONAL TÁTICO",
+  1096→      "unidade": "300G",
+  1097→      "codigo_balanca": 73134,
+  1098→      "categoria": "Pães"
+  1099→    },
+  1100→    {
+  1101→      "codigo_sistema": 102192,
+  1102→      "descricao": "PÃO ITALIANO BOLEADO",
+  1103→      "unidade": "KG",
+  1104→      "codigo_balanca": 1981,
+  1105→      "categoria": "Pães"
+  1106→    },
+  1107→    {
+  1108→      "codigo_sistema": 84281,
+  1109→      "descricao": "PÃO MANDI",
+  1110→      "unidade": "KG",
+  1111→      "codigo_balanca": 233354,
+  1112→      "categoria": "Pães"
+  1113→    },
+  1114→    {
+  1115→      "codigo_sistema": 69507400,
+  1116→      "descricao": "PÃO MANTEIGA TÁTICO",
+  1117→      "unidade": "KG",
+  1118→      "codigo_balanca": 69507400,
+  1119→      "categoria": "Pães"
+  1120→    },
+  1121→    {
+  1122→      "codigo_sistema": 107069,
+  1123→      "descricao": "PÃO MINI FRANCÊS",
+  1124→      "unidade": "KG",
+  1125→      "codigo_balanca": 2648,
+  1126→      "categoria": "Pães"
+  1127→    },
+  1128→    {
+  1129→      "codigo_sistema": 322652,
+  1130→      "descricao": "PÃO MINI MANDI TÁTICO",
+  1131→      "unidade": "300G",
+  1132→      "codigo_balanca": 322652,
+  1133→      "categoria": "Pães"
+  1134→    },
+  1135→    {
+  1136→      "codigo_sistema": 87776,
+  1137→      "descricao": "PÃO MINUTO TATICO",
+  1138→      "unidade": "300G",
+  1139→      "codigo_balanca": 85171,
+  1140→      "categoria": "Pães"
+  1141→    },
+  1142→    {
+  1143→      "codigo_sistema": 2981,
+  1144→      "descricao": "PÃO RECHEADO AMERICANO TÁTICO",
+  1145→      "unidade": "KG",
+  1146→      "codigo_balanca": 2981,
+  1147→      "categoria": "Pães"
+  1148→    },
+  1149→    {
+  1150→      "codigo_sistema": 100526,
+  1151→      "descricao": "PÃO SEMI ITALIANO TÁTICO",
+  1152→      "unidade": "KG",
+  1153→      "codigo_balanca": 100526,
+  1154→      "categoria": "Pães"
+  1155→    },
+  1156→    {
+  1157→      "codigo_sistema": 87771,
+  1158→      "descricao": "PÃO SOVADO TATICO",
+  1159→      "unidade": "300G",
+  1160→      "codigo_balanca": 73127,
+  1161→      "categoria": "Pães"
+  1162→    },
+  1163→    {
+  1164→      "codigo_sistema": 322685,
+  1165→      "descricao": "PÃO VITAMINADO TÁTICO",
+  1166→      "unidade": "200G",
+  1167→      "codigo_balanca": 322685,
+  1168→      "categoria": "Pães"
+  1169→    },
+  1170→    {
+  1171→      "codigo_sistema": 83411,
+  1172→      "descricao": "TORTA TATICO ABACAXI COM NINHO",
+  1173→      "unidade": "UND",
+  1174→      "codigo_balanca": 260084,
+  1175→      "categoria": "Tortas"
+  1176→    },
+  1177→    {
+  1178→      "codigo_sistema": 84512,
+  1179→      "descricao": "TORTA TATICO ABACAXI FATIA",
+  1180→      "unidade": "KG",
+  1181→      "codigo_balanca": 23894,
+  1182→      "categoria": "Tortas"
+  1183→    },
+  1184→    {
+  1185→      "codigo_sistema": 84511,
+  1186→      "descricao": "TORTA TATICO BANANA FATIA",
+  1187→      "unidade": "KG",
+  1188→      "codigo_balanca": 14328,
+  1189→      "categoria": "Tortas"
+  1190→    },
+  1191→    {
+  1192→      "codigo_sistema": 83434,
+  1193→      "descricao": "TORTA TATICO BRIGADEIRO",
+  1194→      "unidade": "UND",
+  1195→      "codigo_balanca": 23658,
+  1196→      "categoria": "Tortas"
+  1197→    },
+  1198→    {
+  1199→      "codigo_sistema": 83432,
+  1200→      "descricao": "TORTA TATICO BRIGADEIRO COM NINHO",
+  1201→      "unidade": "UND",
+  1202→      "codigo_balanca": 260091,
+  1203→      "categoria": "Tortas"
+  1204→    },
+  1205→    {
+  1206→      "codigo_sistema": 84515,
+  1207→      "descricao": "TORTA TATICO BRIGADEIRO FATIA",
+  1208→      "unidade": "KG",
+  1209→      "codigo_balanca": 35408,
+  1210→      "categoria": "Tortas"
+  1211→    },
+  1212→    {
+  1213→      "codigo_sistema": 83435,
+  1214→      "descricao": "TORTA TATICO CHOCOLATE",
+  1215→      "unidade": "UND",
+  1216→      "codigo_balanca": 23573,
+  1217→      "categoria": "Tortas"
+  1218→    },
+  1219→    {
+  1220→      "codigo_sistema": 83433,
+  1221→      "descricao": "TORTA TATICO DOCE DE LEITE",
+  1222→      "unidade": "UND",
+  1223→      "codigo_balanca": 23580,
+  1224→      "categoria": "Tortas"
+  1225→    },
+  1226→    {
+  1227→      "codigo_sistema": 83436,
+  1228→      "descricao": "TORTA TATICO FLORESTA NEGRA",
+  1229→      "unidade": "UND",
+  1230→      "codigo_balanca": 12584,
+  1231→      "categoria": "Tortas"
+  1232→    },
+  1233→    {
+  1234→      "codigo_sistema": 84513,
+  1235→      "descricao": "TORTA TATICO FLORESTA NEGRA FATIA",
+  1236→      "unidade": "KG",
+  1237→      "codigo_balanca": 35392,
+  1238→      "categoria": "Tortas"
+  1239→    },
+  1240→    {
+  1241→      "codigo_sistema": 83437,
+  1242→      "descricao": "TORTA TATICO LEITE NINHO",
+  1243→      "unidade": "UND",
+  1244→      "codigo_balanca": 38607,
+  1245→      "categoria": "Tortas"
+  1246→    },
+  1247→    {
+  1248→      "codigo_sistema": 84517,
+  1249→      "descricao": "TORTA TATICO LEITE NINHO FATIA",
+  1250→      "unidade": "KG",
+  1251→      "codigo_balanca": 44790,
+  1252→      "categoria": "Tortas"
+  1253→    },
+  1254→    {
+  1255→      "codigo_sistema": 83439,
+  1256→      "descricao": "TORTA TATICO MORANGO",
+  1257→      "unidade": "UND",
+  1258→      "codigo_balanca": 25627,
+  1259→      "categoria": "Tortas"
+  1260→    },
+  1261→    {
+  1262→      "codigo_sistema": 83438,
+  1263→      "descricao": "TORTA TATICO MORANGO COM NINHO",
+  1264→      "unidade": "UND",
+  1265→      "codigo_balanca": 54898,
+  1266→      "categoria": "Tortas"
+  1267→    },
+  1268→    {
+  1269→      "codigo_sistema": 83427,
+  1270→      "descricao": "TORTA TATICO NEGRESCO",
+  1271→      "unidade": "UND",
+  1272→      "codigo_balanca": 260077,
+  1273→      "categoria": "Tortas"
+  1274→    },
+  1275→    {
+  1276→      "codigo_sistema": 83440,
+  1277→      "descricao": "TORTA TATICO PRESTÍGIO",
+  1278→      "unidade": "UND",
+  1279→      "codigo_balanca": 23603,
+  1280→      "categoria": "Tortas"
+  1281→    },
+  1282→    {
+  1283→      "codigo_sistema": 84516,
+  1284→      "descricao": "TORTA TATICO PRESTÍGIO FATIA",
+  1285→      "unidade": "KG",
+  1286→      "codigo_balanca": 35415,
+  1287→      "categoria": "Tortas"
+  1288→    }
+  1289→  ]
+  1290→}

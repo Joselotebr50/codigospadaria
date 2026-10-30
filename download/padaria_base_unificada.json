@@ -273,14 +273,14 @@
     },
     {
       "codigo_sistema": 84163,
-      "descricao": "BOLO TATICO LEITE CONDENSADO",
+      "descricao": "BOLO TATICO LEITE CONDENSADO (KG)",
       "unidade": "KG",
       "codigo_balanca": 7894,
       "categoria": "Bolos"
     },
     {
       "codigo_sistema": 87131,
-      "descricao": "BOLO TATICO LEITE CONDENSADO",
+      "descricao": "BOLO TATICO LEITE CONDENSADO (400G)",
       "unidade": "400G",
       "codigo_balanca": 261524,
       "categoria": "Bolos"
@@ -833,14 +833,14 @@
     },
     {
       "codigo_sistema": 322706,
-      "descricao": "PETÃO TÁTICO DOCE",
+      "descricao": "PETÓN TÁTICO DOCE (250G)",
       "unidade": "250G",
       "codigo_balanca": 322706,
       "categoria": "Pães"
     },
     {
       "codigo_sistema": 34548,
-      "descricao": "PETÃO TÁTICO DOCE",
+      "descricao": "PETÓN TÁTICO DOCE (KG)",
       "unidade": "KG",
       "codigo_balanca": 34548,
       "categoria": "Pães"
@@ -1001,7 +1001,7 @@
     },
     {
       "codigo_sistema": 107073,
-      "descricao": "PÃO DE GUEIJO TRADICIONAL TATICO",
+      "descricao": "PÃO DE QUEIJO TRADICIONAL TATICO",
       "unidade": "KG",
       "codigo_balanca": 2652,
       "categoria": "Pães"
