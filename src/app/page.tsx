@@ -388,35 +388,41 @@ export default function HomePage() {
   // ==================== MAIN APP ====================
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'oklch(0.96 0.01 85)' }}>
-      {/* Header */}
-      <header className="sticky top-0 z-40 border-b" style={{ backgroundColor: 'oklch(0.68 0.15 55)', borderColor: 'oklch(0.58 0.12 55)' }}>
-        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+      {/* Área fixa do topo: cabeçalho + busca + filtros */}
+      <div className="sticky top-0 z-40">
+        {/* Header */}
+        <header className="relative overflow-hidden border-b" style={{ background: 'linear-gradient(100deg, oklch(0.72 0.16 60), oklch(0.68 0.15 55) 45%, oklch(0.60 0.13 45))', borderColor: 'oklch(0.58 0.12 55)' }}>
+          {/* Ondas decorativas inspiradas no logo (sutis) */}
+          <svg aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-full w-full" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,70 C240,38 480,94 720,68 C960,42 1200,86 1440,56 L1440,120 L0,120 Z" fill="#FFFFFF" opacity="0.12" />
+            <path d="M0,86 C260,56 520,108 780,82 C1040,56 1240,98 1440,72 L1440,120 L0,120 Z" fill="#FDD835" opacity="0.18" />
+            <path d="M0,100 C280,72 560,118 840,94 C1120,70 1280,108 1440,86 L1440,120 L0,120 Z" fill="#64B5F6" opacity="0.32" />
+          </svg>
+          <div className="relative max-w-4xl mx-auto px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between">
             <img
               src="/tatico-logo.png"
               alt="TATICO"
-              className="h-10 w-auto object-contain rounded-md bg-white/90 px-1 py-0.5"
+              className="h-8 sm:h-10 w-auto object-contain rounded-md bg-white/90 px-1 py-0.5 shadow-sm"
             />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <span className="text-sm text-white/80 hidden sm:inline">
+                {user.name}
+              </span>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleLogout}
+                className="text-white/90 hover:text-white hover:bg-white/20 h-8 sm:h-9 px-2"
+              >
+                <LogOut className="h-4 w-4 sm:mr-1" />
+                <span className="hidden sm:inline">Sair</span>
+              </Button>
+            </div>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="text-sm text-white/80 hidden sm:inline">
-              {user.name}
-            </span>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={handleLogout}
-              className="text-white/90 hover:text-white hover:bg-white/20 h-9 px-2"
-            >
-              <LogOut className="h-4 w-4 mr-1" />
-              <span className="hidden sm:inline">Sair</span>
-            </Button>
-          </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Search Bar */}
-      <div className="sticky top-[52px] z-30 border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
+        {/* Search Bar */}
+        <div className="border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
         <div className="max-w-4xl mx-auto px-4 py-3">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -439,8 +445,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Category Filter Chips */}
-      <div className="sticky top-[108px] z-20 border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
+        {/* Category Filter Chips */}
+        <div className="border-b" style={{ backgroundColor: 'oklch(0.96 0.01 85)', borderColor: 'oklch(0.88 0.03 85)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="flex gap-2 px-4 py-3 overflow-x-auto hide-scrollbar">
             {/* Archived toggle */}
@@ -492,6 +498,7 @@ export default function HomePage() {
               )
             })}
           </div>
+        </div>
         </div>
       </div>
 
