@@ -515,7 +515,7 @@ export default function HomePage() {
             <p className="text-sm mt-1">Tente ajustar os filtros ou adicione um novo produto</p>
           </div>
         ) : (
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <AnimatePresence mode="popLayout">
               {products.map((product) => (
                 <motion.div
