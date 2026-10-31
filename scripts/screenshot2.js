@@ -24,7 +24,7 @@ async function waitForServer(port, maxAttempts = 30) {
   const server = spawn('npx', ['next', 'dev', '-p', '3459'], {
     cwd: '/home/z/my-project',
     stdio: ['pipe', 'pipe', 'pipe'],
-    env: { ...process.env }
+    env: { ...process.env, DATABASE_URL: 'postgresql://postgres@localhost:5432/postgres' }
   });
   
   server.stdout.on('data', (d) => process.stdout.write(d));
